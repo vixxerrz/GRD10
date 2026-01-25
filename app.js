@@ -239,7 +239,7 @@ function renderTop3Points(container, teachersSorted, pointsByTier, categories, m
       rank,
       titleHtml,
       subtitle: "",
-      rightPills: [`Total: ${t.totalPoints}`],
+      rightPills: [`Points: ${t.totalPoints}`],
     });
     item.addEventListener("click", () => modal.openTeacher(t, pointsByTier, categories));
     container.appendChild(item);
@@ -283,7 +283,7 @@ function renderFullPoints(container, teachersSorted, pointsByTier, categories, m
       rank,
       titleHtml,
       subtitle: "",
-      rightPills: [`Total: ${t.totalPoints}`],
+      rightPills: [`Points: ${t.totalPoints}`],
     });
 
     item.addEventListener("click", () => modal.openTeacher(t, pointsByTier, categories));
