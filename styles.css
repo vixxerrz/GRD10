@@ -434,6 +434,13 @@ a:hover {
 
 /* Mobile-friendly improvements */
 @media (max-width: 640px) {
+  body::before {
+    display: none;
+  }
+  body {
+    background: #0a1f0a;
+  }
+
   .container {
     width: calc(100% - 16px);
   }
