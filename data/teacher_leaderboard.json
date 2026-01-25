@@ -19,9 +19,9 @@
       "range": "1",
       "absentDays": 0,
       "categories": {
-        "humor": "T4",
+        "humor": "T3",
         "teachingSkills": "T4",
-        "absence": "LT1"
+        "absence": "T2"
       }
     },
     {
@@ -43,7 +43,7 @@
       "categories": {
         "humor": "T3",
         "teachingSkills": "T3",
-        "absence": "T2"
+        "absence": "LT1"
       }
     },
     {
@@ -63,7 +63,7 @@
       "range": "3",
       "absentDays": 0,
       "categories": {
-        "humor": "T2",
+        "humor": "T3",
         "teachingSkills": "T4",
         "absence": "T5"
       }
