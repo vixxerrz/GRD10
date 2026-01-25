@@ -1,0 +1,9 @@
+{
+  "teachers": [
+    { "teacherId": "hamzath", "absentDays": 0 },
+    { "teacherId": "saraa", "absentDays": 0 },
+    { "teacherId": "seema", "absentDays": 0 },
+    { "teacherId": "adhu", "absentDays": 0 },
+    { "teacherId": "hafeeza", "absentDays": 0 }
+  ]
+}

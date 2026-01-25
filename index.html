@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GRD10</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <div class="brand">
+          <div class="brand-title">GRD10</div>
+          <div class="brand-sub">Leaderboards + resources</div>
+        </div>
+        <nav class="nav">
+          <a href="./index.html">Home</a>
+          <a href="./leaderboards.html">Leaderboards</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>GRD10</h1>
+        <p>
+          B2B software
+        </p>
+      </section>
+
+      <section class="grid section">
+        <div class="card col-6">
+          <h2>Top 3: Teacher Points</h2>
+          <div id="top3Points" class="lb-list" data-error-target></div>
+        </div>
+        <div class="card col-6">
+          <h2>Top 3: Absence</h2>
+          <div id="top3Absence" class="lb-list" data-error-target></div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <h3 class="section-title">Resources</h3>
+        <div class="resources">
+          <a class="resource" href="./resources/resource-1.png" target="_blank" rel="noreferrer">
+            <div>Resource PNG 1</div>
+            <small>Opens the image</small>
+          </a>
+          <a class="resource" href="./resources/resource-2.png" target="_blank" rel="noreferrer">
+            <div>Resource PNG 2</div>
+            <small>Opens the image</small>
+          </a>
+          <a class="resource" href="./resources/resource-3.png" target="_blank" rel="noreferrer">
+            <div>Resource PNG 3</div>
+            <small>Opens the image</small>
+          </a>
+          <a class="resource" href="./resources/resource.pdf" download>
+            <div>Resource PDF</div>
+            <small>Download only (no preview)</small>
+          </a>
+        </div>
+      </section>
+
+      <div class="footer">GRD10</div>
+    </main>
+
+    <div id="modalBackdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-label="Teacher details">
+      <div class="modal">
+        <div class="modal-header">
+          <div>
+            <h3 id="modalTitle" class="modal-title">Teacher</h3>
+            <div class="modal-grid">
+              <div class="modal-box">
+                <div id="modalMeta" class="kv"></div>
+              </div>
+              <div class="modal-box">
+                <div class="kv">
+                  <div>Total points</div>
+                  <div id="modalTotalPoints">0</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button id="modalClose" class="modal-close" type="button">Close</button>
+        </div>
+
+        <div class="modal-box" style="margin-top: 12px;">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Tier</th>
+                <th>Points</th>
+              </tr>
+            </thead>
+            <tbody id="modalCategoryBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

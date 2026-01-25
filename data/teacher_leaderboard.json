@@ -1,0 +1,72 @@
+{
+  "pointsByTier": {
+    "T5": 2,
+    "T4": 4,
+    "T3": 10,
+    "T2": 30,
+    "LT1": 45,
+    "HT1": 60
+  },
+  "categories": [
+    "humor",
+    "teachingSkills",
+    "absence"
+  ],
+  "teachers": [
+    {
+      "id": "hamzath",
+      "name": "Hamzath",
+      "range": "1",
+      "absentDays": 0,
+      "categories": {
+        "humor": "T4",
+        "teachingSkills": "T4",
+        "absence": "LT1"
+      }
+    },
+    {
+      "id": "saraa",
+      "name": "Saraa",
+      "range": "2",
+      "absentDays": 0,
+      "categories": {
+        "humor": "T5",
+        "teachingSkills": "T5",
+        "absence": "T5"
+      }
+    },
+    {
+      "id": "seema",
+      "name": "Seema",
+      "range": "2",
+      "absentDays": 0,
+      "categories": {
+        "humor": "T3",
+        "teachingSkills": "T3",
+        "absence": "T2"
+      }
+    },
+    {
+      "id": "adhu",
+      "name": "Ab. Amir",
+      "range": "3",
+      "absentDays": 0,
+      "categories": {
+        "humor": "T5",
+        "teachingSkills": "T5",
+        "absence": "T2"
+      }
+    },
+    {
+      "id": "hafeeza",
+      "name": "Hafeeza",
+      "range": "3",
+      "absentDays": 0,
+      "categories": {
+        "humor": "T2",
+        "teachingSkills": "T4",
+        "absence": "T5"
+      }
+    }
+  ]
+}
