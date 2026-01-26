@@ -1,21 +1,68 @@
 {
   "teachers": [
-    { "teacherId": "hamzath", "absentDays": 8 },
-    { "teacherId": "antony", "absentDays": 1 },
-    { "teacherId": "seema", "absentDays": 10 },
-    { "teacherId": "adhu", "absentDays": 6 },
-    { "teacherId": "hafeeza", "absentDays": 3 },
-    { "teacherId": "sudheesh", "absentDays": 2 },
-    { "teacherId": "raeshma", "absentDays": 2 },
-    { "teacherId": "amjadh", "absentDays": 14 },
-    { "teacherId": "krishna", "absentDays": 8 },
-    { "teacherId": "vinoth", "absentDays": 4 },
-    { "teacherId": "haritha", "absentDays": 4 },
-    { "teacherId": "sanika", "absentDays": 7 },
-    { "teacherId": "sareena", "absentDays": 5 },
-    { "teacherId": "abraham", "absentDays": 4 },
-    { "teacherId": "sumathi", "absentDays": 3 },
-    { "teacherId": "azmia", "absentDays": 0 }
-    
+    {
+      "teacherId": "hamzath",
+      "absentDays": 8
+    },
+    {
+      "teacherId": "antony",
+      "absentDays": 1
+    },
+    {
+      "teacherId": "seema",
+      "absentDays": 10
+    },
+    {
+      "teacherId": "adhu",
+      "absentDays": 6
+    },
+    {
+      "teacherId": "hafeeza",
+      "absentDays": 3
+    },
+    {
+      "teacherId": "sudheesh",
+      "absentDays": 2
+    },
+    {
+      "teacherId": "raeshma",
+      "absentDays": 2
+    },
+    {
+      "teacherId": "amjadh",
+      "absentDays": 14
+    },
+    {
+      "teacherId": "krishna",
+      "absentDays": 8
+    },
+    {
+      "teacherId": "vinoth",
+      "absentDays": 4
+    },
+    {
+      "teacherId": "haritha",
+      "absentDays": 4
+    },
+    {
+      "teacherId": "sanika",
+      "absentDays": 7
+    },
+    {
+      "teacherId": "sareena",
+      "absentDays": 5
+    },
+    {
+      "teacherId": "abraham",
+      "absentDays": 4
+    },
+    {
+      "teacherId": "sumathi",
+      "absentDays": 3
+    },
+    {
+      "teacherId": "azmia",
+      "absentDays": 0
+    }
   ]
 }
