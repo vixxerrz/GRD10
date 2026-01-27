@@ -452,13 +452,13 @@ a:hover {
   margin-top: 20px;
 }
 
-/* Mobile-friendly improvements */
+/* Mobile shi */
 @media (max-width: 640px) {
   body::before {
     display: none;
   }
   body {
-    background: #0a1f0a;
+    background: #030e04;
   }
 
   .container {
