@@ -5,23 +5,11 @@
       "absentDays": 0
     },
     {
-      "teacherId": "antony",
-      "absentDays": 0
-    },
-    {
       "teacherId": "seema",
       "absentDays": 0
     },
     {
-      "teacherId": "adhu",
-      "absentDays": 0
-    },
-    {
       "teacherId": "hafeeza",
-      "absentDays": 0
-    },
-    {
-      "teacherId": "sudheesh",
       "absentDays": 0
     },
     {
@@ -30,14 +18,6 @@
     },
     {
       "teacherId": "amjadh",
-      "absentDays": 0
-    },
-    {
-      "teacherId": "krishna",
-      "absentDays": 0
-    },
-    {
-      "teacherId": "vinoth",
       "absentDays": 0
     },
     {
@@ -53,15 +33,23 @@
       "absentDays": 0
     },
     {
-      "teacherId": "abraham",
+      "teacherId": "azima",
       "absentDays": 0
     },
     {
-      "teacherId": "sumathi",
+      "teacherId": "niyaaza",
       "absentDays": 0
     },
     {
-      "teacherId": "azmia",
+      "teacherId": "alima",
+      "absentDays": 0
+    },
+    {
+      "teacherId": "saara",
+      "absentDays": 0
+    },
+    {
+      "teacherId": "sijo",
       "absentDays": 0
     }
   ]
