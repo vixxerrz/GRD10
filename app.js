@@ -153,8 +153,10 @@ function modalApi() {
     title.textContent = teacher.name;
 
     const metaRows = [
+      ["ID", teacher.id ?? "-"],
       ["Range", teacher.range ?? "-"],
       ["Days absent", String(teacher.absentDays ?? 0)],
+      ["Description", teacher.description ?? ""]
     ];
 
     meta.innerHTML = "";
