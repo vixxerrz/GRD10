@@ -17,80 +17,47 @@
       "id": "hamzath",
       "name": "Hamzath",
       "range": "1",
-      "absentDays": 8,
-      "categories": {
-        "humor": "T3",
-        "teachingSkills": "T4",
-        "absence": "T2"
-      },
-      "description": ""
-    },
-    {
-      "id": "antony",
-      "name": "Antony",
-      "range": "2",
-      "absentDays": 1,
+      "absentDays": 0,
       "categories": {
         "humor": "T5",
         "teachingSkills": "T5",
         "absence": "T5"
       },
-      "description": "HT1 st-t-t-turring"
+      "description": ""
     },
     {
       "id": "seema",
       "name": "Seema",
       "range": "2",
-      "absentDays": 10,
-      "categories": {
-        "humor": "T3",
-        "teachingSkills": "T3",
-        "absence": "LT1"
-      },
-      "description": "HT1 late"
-    },
-    {
-      "id": "adhu",
-      "name": "Ab. Amir",
-      "range": "1",
-      "absentDays": 6,
+      "absentDays": 0,
       "categories": {
         "humor": "T5",
         "teachingSkills": "T5",
-        "absence": "T3"
-      }
+        "absence": "T5"
+      },
+      "description": ""
     },
     {
       "id": "hafeeza",
       "name": "Hafeeza",
       "range": "3",
-      "absentDays": 3,
+      "absentDays": 0,
       "categories": {
-        "humor": "T3",
-        "teachingSkills": "T4",
+        "humor": "T5",
+        "teachingSkills": "T5",
         "absence": "T5"
-      }
-    },
-    {
-      "id": "sudheesh",
-      "name": "Sudheesh",
-      "range": "1",
-      "absentDays": 2,
-      "categories": {
-        "humor": "T3",
-        "teachingSkills": "T4",
-        "absence": "T4"
-      }
+      },
+      "description": ""
     },
     {
       "id": "raeshma",
       "name": "Reeshma",
       "range": "1",
-      "absentDays": 2,
+      "absentDays": 0,
       "categories": {
-        "humor": "T4",
-        "teachingSkills": "T4",
-        "absence": "T4"
+        "humor": "T5",
+        "teachingSkills": "T5",
+        "absence": "T5"
       },
       "description": ""
     },
@@ -98,35 +65,11 @@
       "id": "amjadh",
       "name": "Amjadh",
       "range": "3",
-      "absentDays": 14,
-      "categories": {
-        "humor": "T3",
-        "teachingSkills": "T4",
-        "absence": "HT1"
-      },
-      "description": "LT1 pedo"
-    },
-    {
-      "id": "krishna",
-      "name": "Krishna",
-      "range": "3",
-      "absentDays": 8,
+      "absentDays": 0,
       "categories": {
         "humor": "T5",
         "teachingSkills": "T5",
-        "absence": "T2"
-      },
-      "description": "HT1 free time"
-    },
-    {
-      "id": "vinoth",
-      "name": "Vinoth",
-      "range": "2",
-      "absentDays": 4,
-      "categories": {
-        "humor": "T3",
-        "teachingSkills": "T3",
-        "absence": "T4"
+        "absence": "T5"
       },
       "description": ""
     },
@@ -134,23 +77,23 @@
       "id": "haritha",
       "name": "Haritha",
       "range": "2",
-      "absentDays": 4,
+      "absentDays": 0,
       "categories": {
         "humor": "T5",
-        "teachingSkills": "T4",
-        "absence": "T4"
+        "teachingSkills": "T5",
+        "absence": "T5"
       },
-      "description": "HT1 attitude"
+      "description": ""
     },
     {
       "id": "sanika",
       "name": "Sanika",
       "range": "1",
-      "absentDays": 7,
+      "absentDays": 0,
       "categories": {
         "humor": "T5",
         "teachingSkills": "T5",
-        "absence": "T3"
+        "absence": "T5"
       },
       "description": ""
     },
@@ -158,37 +101,13 @@
       "id": "sareena",
       "name": "Sareena",
       "range": "1",
-      "absentDays": 5,
+      "absentDays": 0,
       "categories": {
         "humor": "T5",
-        "teachingSkills": "T3",
-        "absence": "T3"
+        "teachingSkills": "T5",
+        "absence": "T5"
       },
       "description": ""
-    },
-    {
-      "id": "abraham",
-      "name": "Abraham",
-      "range": "1",
-      "absentDays": 4,
-      "categories": {
-        "humor": "T2",
-        "teachingSkills": "T3",
-        "absence": "T4"
-      },
-      "description": ""
-    },
-    {
-      "id": "sumathi",
-      "name": "Sumathi",
-      "range": "3",
-      "absentDays": 3,
-      "categories": {
-        "humor": "LT1",
-        "teachingSkills": "LT1",
-        "absence": "T4"
-      },
-      "description": "GOAT"
     },
     {
       "id": "azima",
@@ -197,7 +116,55 @@
       "absentDays": 0,
       "categories": {
         "humor": "T5",
-        "teachingSkills": "T4",
+        "teachingSkills": "T5",
+        "absence": "T5"
+      },
+      "description": "Teaches Islam"
+    },
+    {
+      "id": "niyaaza",
+      "name": "Niyaaza",
+      "range": "3",
+      "absentDays": 0,
+      "categories": {
+        "humor": "T5",
+        "teachingSkills": "T5",
+        "absence": "T5"
+      },
+      "description": ""
+    },
+    {
+      "id": "alima",
+      "name": "Alima",
+      "range": "1",
+      "absentDays": 0,
+      "categories": {
+        "humor": "T5",
+        "teachingSkills": "T5",
+        "absence": "T5"
+      },
+      "description": ""
+    },
+    {
+      "id": "saara",
+      "name": "Saara",
+      "range": "1",
+      "absentDays": 0,
+      "categories": {
+        "humor": "T5",
+        "teachingSkills": "T5",
+        "absence": "T5"
+      },
+      "description": ""
+    },
+    {
+      "id": "sijo",
+      "name": "Sijo",
+      "range": "3",
+      "absentDays": 0,
+      "categories": {
+        "humor": "T5",
+        "teachingSkills": "T5",
         "absence": "T5"
       },
       "description": ""
