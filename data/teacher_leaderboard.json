@@ -23,7 +23,7 @@
         "teachingSkills": "T4",
         "absence": "T2"
       },
-      "description": "Teaches physics to Galileo"
+      "description": ""
     },
     {
       "id": "antony",
@@ -35,7 +35,7 @@
         "teachingSkills": "T5",
         "absence": "T5"
       },
-      "description": ""
+      "description": "HT1 st-t-t-turring"
     },
     {
       "id": "seema",
@@ -47,7 +47,7 @@
         "teachingSkills": "T3",
         "absence": "LT1"
       },
-      "description": ""
+      "description": "HT1 late"
     },
     {
       "id": "adhu",
@@ -58,8 +58,7 @@
         "humor": "T5",
         "teachingSkills": "T5",
         "absence": "T3"
-      },
-      "description": ""
+      }
     },
     {
       "id": "hafeeza",
@@ -70,8 +69,7 @@
         "humor": "T3",
         "teachingSkills": "T4",
         "absence": "T5"
-      },
-      "description": ""
+      }
     },
     {
       "id": "sudheesh",
@@ -82,8 +80,7 @@
         "humor": "T3",
         "teachingSkills": "T4",
         "absence": "T4"
-      },
-      "description": ""
+      }
     },
     {
       "id": "raeshma",
@@ -107,7 +104,7 @@
         "teachingSkills": "T4",
         "absence": "HT1"
       },
-      "description": ""
+      "description": "LT1 pedo"
     },
     {
       "id": "krishna",
@@ -119,7 +116,7 @@
         "teachingSkills": "T5",
         "absence": "T2"
       },
-      "description": ""
+      "description": "HT1 free time"
     },
     {
       "id": "vinoth",
@@ -143,7 +140,7 @@
         "teachingSkills": "T4",
         "absence": "T4"
       },
-      "description": ""
+      "description": "HT1 attitude"
     },
     {
       "id": "sanika",
@@ -191,7 +188,7 @@
         "teachingSkills": "LT1",
         "absence": "T4"
       },
-      "description": ""
+      "description": "GOAT"
     },
     {
       "id": "azima",
@@ -203,7 +200,7 @@
         "teachingSkills": "T4",
         "absence": "T5"
       },
-      "description": "Teaches Islam"
+      "description": ""
     }
   ]
 }

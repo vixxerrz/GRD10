@@ -139,6 +139,7 @@ function modalApi() {
   const backdrop = document.getElementById("modalBackdrop");
   const title = document.getElementById("modalTitle");
   const meta = document.getElementById("modalMeta");
+  const description = document.getElementById("modalDescription");
   const tableBody = document.getElementById("modalCategoryBody");
   const total = document.getElementById("modalTotalPoints");
   const closeBtn = document.getElementById("modalClose");
@@ -148,15 +149,14 @@ function modalApi() {
   }
 
   function openTeacher(teacher, pointsByTier, categories) {
-    if (!backdrop || !title || !meta || !tableBody || !total) return;
+    if (!backdrop || !title || !meta || !description || !tableBody || !total) return;
 
     title.textContent = teacher.name;
 
     const metaRows = [
       ["ID", teacher.id ?? "-"],
       ["Range", teacher.range ?? "-"],
-      ["Days absent", String(teacher.absentDays ?? 0)],
-      ["Description", teacher.description ?? ""]
+      ["Days absent", String(teacher.absentDays ?? 0)]
     ];
 
     meta.innerHTML = "";
@@ -168,6 +168,8 @@ function modalApi() {
       meta.appendChild(dk);
       meta.appendChild(dv);
     }
+
+    description.textContent = teacher.description ?? "";
 
     tableBody.innerHTML = "";
     for (const cat of categories) {

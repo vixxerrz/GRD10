@@ -105,6 +105,17 @@ a:hover {
   text-decoration: none;
 }
 
+.modal-close:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.modal-description {
+  font-size: 13px;
+  color: var(--muted);
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
 .hero {
   padding: 26px 0 18px;
 }
