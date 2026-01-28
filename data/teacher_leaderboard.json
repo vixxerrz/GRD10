@@ -149,11 +149,11 @@
       "id": "saara",
       "name": "Saara",
       "range": "1",
-      "absentDays": 0,
+      "absentDays": 1,
       "categories": {
         "humor": "T5",
         "teachingSkills": "T5",
-        "absence": "T5"
+        "absence": "T3"
       },
       "description": ""
     },
@@ -168,6 +168,30 @@
         "absence": "T5"
       },
       "description": ""
+    },
+    {
+      "id": "new-2",
+      "name": "new 2",
+      "range": "3",
+      "absentDays": 1,
+      "description": "",
+      "categories": {
+        "humor": "T5",
+        "teachingSkills": "T5",
+        "absence": "T3"
+      }
+    },
+    {
+      "id": "shaahidha",
+      "name": "shaahidha",
+      "range": "1",
+      "absentDays": 1,
+      "description": "",
+      "categories": {
+        "humor": "T5",
+        "teachingSkills": "T5",
+        "absence": "T3"
+      }
     }
   ]
 }

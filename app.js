@@ -57,12 +57,10 @@ function sortByPointsDesc(teachers) {
   });
 }
 
-function sortByAbsenceDesc(absenceRows, teacherById) {
-  return [...absenceRows].sort((a, b) => {
+function sortByAbsenceDesc(teachers) {
+  return [...teachers].sort((a, b) => {
     if (Number(b.absentDays) !== Number(a.absentDays)) return Number(b.absentDays) - Number(a.absentDays);
-    const an = teacherById.get(a.teacherId)?.name ?? "";
-    const bn = teacherById.get(b.teacherId)?.name ?? "";
-    return String(an).localeCompare(String(bn));
+    return String(a.name).localeCompare(String(b.name));
   });
 }
 
@@ -208,24 +206,19 @@ function modalApi() {
 }
 
 async function loadData() {
-  const [teachersRes, absenceRes] = await Promise.all([fetch(DATA_TEACHERS_URL), fetch(DATA_ABSENCE_URL)]);
+  const teachersRes = await fetch(DATA_TEACHERS_URL);
   const teachersData = await teachersRes.json();
-  const absenceData = await absenceRes.json();
 
   const teachersWithTotals = computeTeacherTotals(teachersData);
   const teachersSorted = sortByPointsDesc(teachersWithTotals);
 
-  const teacherById = new Map();
-  for (const t of teachersWithTotals) teacherById.set(t.id, t);
-
-  const absenceSorted = sortByAbsenceDesc(absenceData.teachers || [], teacherById);
+  // Use teacher data for absence leaderboard instead of separate file
+  const absenceSorted = sortByAbsenceDesc(teachersData.teachers || []);
 
   return {
     teachersData,
-    absenceData,
     teachersWithTotals,
     teachersSorted,
-    teacherById,
     absenceSorted,
   };
 }
@@ -250,24 +243,21 @@ function renderTop3Points(container, teachersSorted, pointsByTier, categories, m
   });
 }
 
-function renderTop3Absence(container, absenceSorted, teacherById, pointsByTier, categories, modal) {
+function renderTop3Absence(container, absenceSorted, pointsByTier, categories, modal) {
   if (!container) return;
   container.innerHTML = "";
 
   const top3 = absenceSorted.slice(0, 3);
-  top3.forEach((row, i) => {
+  top3.forEach((teacher, i) => {
     const rank = i + 1;
     const cls = top3Class(rank);
-
-    const teacher = teacherById.get(row.teacherId);
-    if (!teacher) return;
 
     const titleHtml = `<span class="top3 ${cls}">${teacher.name}</span>`;
     const item = makeLeaderboardItem({
       rank,
       titleHtml,
       subtitle: "",
-      rightPills: [`Absent: ${row.absentDays}`],
+      rightPills: [`Absent: ${teacher.absentDays}`],
     });
     item.addEventListener("click", () => modal.openTeacher(teacher, pointsByTier, categories));
     container.appendChild(item);
@@ -295,15 +285,12 @@ function renderFullPoints(container, teachersSorted, pointsByTier, categories, m
   });
 }
 
-function renderFullAbsence(container, absenceSorted, teacherById, pointsByTier, categories, modal) {
+function renderFullAbsence(container, absenceSorted, pointsByTier, categories, modal) {
   if (!container) return;
   container.innerHTML = "";
 
-  absenceSorted.forEach((row, idx) => {
+  absenceSorted.forEach((teacher, idx) => {
     const rank = idx + 1;
-    const teacher = teacherById.get(row.teacherId);
-    if (!teacher) return;
-
     const isTop3 = rank <= 3;
     const titleHtml = isTop3 ? `<span class="top3 ${top3Class(rank)}">${teacher.name}</span>` : `${teacher.name}`;
 
@@ -311,7 +298,7 @@ function renderFullAbsence(container, absenceSorted, teacherById, pointsByTier, 
       rank,
       titleHtml,
       subtitle: "",
-      rightPills: [`Absent: ${row.absentDays}`],
+      rightPills: [`Absent: ${teacher.absentDays}`],
     });
 
     item.addEventListener("click", () => modal.openTeacher(teacher, pointsByTier, categories));
@@ -338,10 +325,10 @@ async function main() {
   const categories = data.teachersData.categories || [];
 
   renderTop3Points(document.getElementById("top3Points"), data.teachersSorted, pointsByTier, categories, modal);
-  renderTop3Absence(document.getElementById("top3Absence"), data.absenceSorted, data.teacherById, pointsByTier, categories, modal);
+  renderTop3Absence(document.getElementById("top3Absence"), data.absenceSorted, pointsByTier, categories, modal);
 
   renderFullPoints(document.getElementById("fullPoints"), data.teachersSorted, pointsByTier, categories, modal);
-  renderFullAbsence(document.getElementById("fullAbsence"), data.absenceSorted, data.teacherById, pointsByTier, categories, modal);
+  renderFullAbsence(document.getElementById("fullAbsence"), data.absenceSorted, pointsByTier, categories, modal);
 }
 
 document.addEventListener("DOMContentLoaded", main);
