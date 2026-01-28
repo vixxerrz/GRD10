@@ -1,9 +1,13 @@
 {
   "pointsByTier": {
-    "T5": 2,
-    "T4": 4,
-    "T3": 10,
-    "T2": 30,
+    "LT5": 1,
+    "HT5": 2,
+    "LT4": 3,
+    "HT4": 4,
+    "LT3": 6,
+    "HT3": 10,
+    "LT2": 20,
+    "HT2": 30,
     "LT1": 45,
     "HT1": 60
   },
@@ -19,9 +23,9 @@
       "range": "1",
       "absentDays": 0,
       "categories": {
-        "humor": "T4",
-        "teachingSkills": "T5",
-        "absence": "T5"
+        "humor": "LT4",
+        "teachingSkills": "LT5",
+        "absence": "LT5"
       },
       "description": ""
     },
@@ -31,9 +35,9 @@
       "range": "2",
       "absentDays": 0,
       "categories": {
-        "humor": "T4",
-        "teachingSkills": "T5",
-        "absence": "T5"
+        "humor": "LT4",
+        "teachingSkills": "LT5",
+        "absence": "LT5"
       },
       "description": ""
     },
@@ -43,9 +47,9 @@
       "range": "3",
       "absentDays": 0,
       "categories": {
-        "humor": "T5",
-        "teachingSkills": "T5",
-        "absence": "T5"
+        "humor": "LT5",
+        "teachingSkills": "LT5",
+        "absence": "LT5"
       },
       "description": ""
     },
@@ -55,9 +59,9 @@
       "range": "1",
       "absentDays": 0,
       "categories": {
-        "humor": "T3",
-        "teachingSkills": "T5",
-        "absence": "T5"
+        "humor": "LT3",
+        "teachingSkills": "LT5",
+        "absence": "LT5"
       },
       "description": ""
     },
@@ -67,9 +71,9 @@
       "range": "3",
       "absentDays": 0,
       "categories": {
-        "humor": "T3",
-        "teachingSkills": "T5",
-        "absence": "T5"
+        "humor": "HT4",
+        "teachingSkills": "LT5",
+        "absence": "LT5"
       },
       "description": ""
     },
@@ -79,9 +83,9 @@
       "range": "2",
       "absentDays": 0,
       "categories": {
-        "humor": "T4",
-        "teachingSkills": "T5",
-        "absence": "T5"
+        "humor": "HT5",
+        "teachingSkills": "LT5",
+        "absence": "LT5"
       },
       "description": ""
     },
@@ -91,9 +95,9 @@
       "range": "1",
       "absentDays": 0,
       "categories": {
-        "humor": "T4",
-        "teachingSkills": "T5",
-        "absence": "T5"
+        "humor": "LT4",
+        "teachingSkills": "LT5",
+        "absence": "LT5"
       },
       "description": ""
     },
@@ -103,9 +107,9 @@
       "range": "1",
       "absentDays": 0,
       "categories": {
-        "humor": "T5",
-        "teachingSkills": "T5",
-        "absence": "T5"
+        "humor": "LT5",
+        "teachingSkills": "LT5",
+        "absence": "LT5"
       },
       "description": ""
     },
@@ -115,9 +119,9 @@
       "range": "3",
       "absentDays": 0,
       "categories": {
-        "humor": "T5",
-        "teachingSkills": "T5",
-        "absence": "T5"
+        "humor": "LT5",
+        "teachingSkills": "LT5",
+        "absence": "LT5"
       },
       "description": ""
     },
@@ -127,9 +131,9 @@
       "range": "3",
       "absentDays": 0,
       "categories": {
-        "humor": "T3",
-        "teachingSkills": "T5",
-        "absence": "T5"
+        "humor": "LT3",
+        "teachingSkills": "LT5",
+        "absence": "LT5"
       },
       "description": ""
     },
@@ -139,9 +143,9 @@
       "range": "1",
       "absentDays": 1,
       "categories": {
-        "humor": "T5",
-        "teachingSkills": "T5",
-        "absence": "T3"
+        "humor": "LT5",
+        "teachingSkills": "LT5",
+        "absence": "LT3"
       },
       "description": ""
     },
@@ -151,9 +155,9 @@
       "range": "3",
       "absentDays": 0,
       "categories": {
-        "humor": "T3",
-        "teachingSkills": "T5",
-        "absence": "T5"
+        "humor": "LT3",
+        "teachingSkills": "LT5",
+        "absence": "LT5"
       },
       "description": ""
     },
@@ -164,9 +168,9 @@
       "absentDays": 1,
       "description": "",
       "categories": {
-        "humor": "T5",
-        "teachingSkills": "T5",
-        "absence": "T3"
+        "humor": "LT5",
+        "teachingSkills": "LT5",
+        "absence": "LT3"
       }
     },
     {
@@ -176,9 +180,9 @@
       "absentDays": 1,
       "description": "",
       "categories": {
-        "humor": "T5",
-        "teachingSkills": "T5",
-        "absence": "T3"
+        "humor": "LT5",
+        "teachingSkills": "LT5",
+        "absence": "LT3"
       }
     },
     {
@@ -188,9 +192,9 @@
       "absentDays": 0,
       "description": "",
       "categories": {
-        "humor": "T3",
-        "teachingSkills": "T5",
-        "absence": "T5"
+        "humor": "LT3",
+        "teachingSkills": "LT5",
+        "absence": "LT5"
       }
     }
   ]

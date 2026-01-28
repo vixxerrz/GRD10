@@ -9,8 +9,9 @@ function normalizeTier(tier) {
 function tierLabel(tier) {
   const t = normalizeTier(tier);
   if (!t) return "-";
-  if (t === "HT1") return "HT1";
-  if (t === "LT1") return "LT1";
+  // Handle all LT and HT tiers
+  if (t.startsWith("LT") || t.startsWith("HT")) return t;
+  // Handle regular T tiers
   if (t.startsWith("T")) return t;
   return t;
 }
