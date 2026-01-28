@@ -19,7 +19,7 @@
       "range": "1",
       "absentDays": 0,
       "categories": {
-        "humor": "T5",
+        "humor": "T4",
         "teachingSkills": "T5",
         "absence": "T5"
       },
@@ -31,7 +31,7 @@
       "range": "2",
       "absentDays": 0,
       "categories": {
-        "humor": "T5",
+        "humor": "T4",
         "teachingSkills": "T5",
         "absence": "T5"
       },
@@ -55,7 +55,7 @@
       "range": "1",
       "absentDays": 0,
       "categories": {
-        "humor": "T5",
+        "humor": "T3",
         "teachingSkills": "T5",
         "absence": "T5"
       },
@@ -67,7 +67,7 @@
       "range": "3",
       "absentDays": 0,
       "categories": {
-        "humor": "T5",
+        "humor": "T3",
         "teachingSkills": "T5",
         "absence": "T5"
       },
@@ -79,7 +79,7 @@
       "range": "2",
       "absentDays": 0,
       "categories": {
-        "humor": "T5",
+        "humor": "T4",
         "teachingSkills": "T5",
         "absence": "T5"
       },
@@ -91,7 +91,7 @@
       "range": "1",
       "absentDays": 0,
       "categories": {
-        "humor": "T5",
+        "humor": "T4",
         "teachingSkills": "T5",
         "absence": "T5"
       },
@@ -119,7 +119,7 @@
         "teachingSkills": "T5",
         "absence": "T5"
       },
-      "description": "Teaches Islam"
+      "description": ""
     },
     {
       "id": "niyaaza",
@@ -127,19 +127,7 @@
       "range": "3",
       "absentDays": 0,
       "categories": {
-        "humor": "T5",
-        "teachingSkills": "T5",
-        "absence": "T5"
-      },
-      "description": ""
-    },
-    {
-      "id": "alima",
-      "name": "Alima",
-      "range": "1",
-      "absentDays": 0,
-      "categories": {
-        "humor": "T5",
+        "humor": "T3",
         "teachingSkills": "T5",
         "absence": "T5"
       },
@@ -163,7 +151,7 @@
       "range": "3",
       "absentDays": 0,
       "categories": {
-        "humor": "T5",
+        "humor": "T3",
         "teachingSkills": "T5",
         "absence": "T5"
       },
@@ -191,6 +179,18 @@
         "humor": "T5",
         "teachingSkills": "T5",
         "absence": "T3"
+      }
+    },
+    {
+      "id": "alim",
+      "name": "Alim",
+      "range": "1",
+      "absentDays": 0,
+      "description": "",
+      "categories": {
+        "humor": "T3",
+        "teachingSkills": "T5",
+        "absence": "T5"
       }
     }
   ]
