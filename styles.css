@@ -454,13 +454,6 @@ a:hover {
 
 /* Mobile shi */
 @media (max-width: 640px) {
-  body::before {
-    display: none;
-  }
-  body {
-    background: #030e04;
-  }
-
   .container {
     width: calc(100% - 16px);
   }

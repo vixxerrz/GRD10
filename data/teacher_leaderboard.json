@@ -14,30 +14,31 @@
   "categories": [
     "humor",
     "teachingSkills",
-    "absence"
+    "absentness"
   ],
   "teachers": [
     {
       "id": "hamzath",
       "name": "Hamzath",
       "range": "1",
-      "absentDays": 0,
+      "lessonsMissed": 0,
       "categories": {
         "humor": "LT4",
         "teachingSkills": "LT5",
-        "absence": "LT5"
+        "absentness": "LT5"
       },
-      "description": ""
+      "description": "",
+      "absentDays": 1
     },
     {
       "id": "seema",
       "name": "Seema",
       "range": "2",
-      "absentDays": 0,
+      "lessonsMissed": 0,
       "categories": {
         "humor": "LT4",
         "teachingSkills": "LT5",
-        "absence": "LT5"
+        "absentness": "LT5"
       },
       "description": ""
     },
@@ -45,11 +46,11 @@
       "id": "hafeeza",
       "name": "Hafeeza",
       "range": "3",
-      "absentDays": 0,
+      "lessonsMissed": 0,
       "categories": {
         "humor": "LT5",
         "teachingSkills": "LT5",
-        "absence": "LT5"
+        "absentness": "LT5"
       },
       "description": ""
     },
@@ -57,11 +58,11 @@
       "id": "raeshma",
       "name": "Reeshma",
       "range": "1",
-      "absentDays": 0,
+      "lessonsMissed": 0,
       "categories": {
-        "humor": "LT3",
+        "humor": "HT4",
         "teachingSkills": "LT5",
-        "absence": "LT5"
+        "absentness": "LT5"
       },
       "description": ""
     },
@@ -69,11 +70,11 @@
       "id": "amjadh",
       "name": "Amjadh",
       "range": "3",
-      "absentDays": 0,
+      "lessonsMissed": 0,
       "categories": {
         "humor": "HT4",
         "teachingSkills": "LT5",
-        "absence": "LT5"
+        "absentness": "LT5"
       },
       "description": ""
     },
@@ -81,11 +82,11 @@
       "id": "haritha",
       "name": "Haritha",
       "range": "2",
-      "absentDays": 0,
+      "lessonsMissed": 0,
       "categories": {
         "humor": "HT5",
         "teachingSkills": "LT5",
-        "absence": "LT5"
+        "absentness": "LT5"
       },
       "description": ""
     },
@@ -93,11 +94,11 @@
       "id": "sanika",
       "name": "Sanika",
       "range": "1",
-      "absentDays": 0,
+      "lessonsMissed": 0,
       "categories": {
         "humor": "LT4",
         "teachingSkills": "LT5",
-        "absence": "LT5"
+        "absentness": "LT5"
       },
       "description": ""
     },
@@ -105,11 +106,11 @@
       "id": "sareena",
       "name": "Sareena",
       "range": "1",
-      "absentDays": 0,
+      "lessonsMissed": 0,
       "categories": {
         "humor": "LT5",
         "teachingSkills": "LT5",
-        "absence": "LT5"
+        "absentness": "LT5"
       },
       "description": ""
     },
@@ -117,11 +118,11 @@
       "id": "azima",
       "name": "Azima",
       "range": "3",
-      "absentDays": 0,
+      "lessonsMissed": 0,
       "categories": {
         "humor": "LT5",
         "teachingSkills": "LT5",
-        "absence": "LT5"
+        "absentness": "LT5"
       },
       "description": ""
     },
@@ -129,11 +130,11 @@
       "id": "niyaaza",
       "name": "Niyaaza",
       "range": "3",
-      "absentDays": 0,
+      "lessonsMissed": 0,
       "categories": {
-        "humor": "LT3",
+        "humor": "HT4",
         "teachingSkills": "LT5",
-        "absence": "LT5"
+        "absentness": "LT5"
       },
       "description": ""
     },
@@ -141,11 +142,11 @@
       "id": "saara",
       "name": "Saara",
       "range": "1",
-      "absentDays": 1,
+      "lessonsMissed": 1,
       "categories": {
         "humor": "LT5",
         "teachingSkills": "LT5",
-        "absence": "LT3"
+        "absentness": "HT5"
       },
       "description": ""
     },
@@ -153,11 +154,11 @@
       "id": "sijo",
       "name": "Sijo",
       "range": "3",
-      "absentDays": 0,
+      "lessonsMissed": 0,
       "categories": {
         "humor": "LT3",
         "teachingSkills": "LT5",
-        "absence": "LT5"
+        "absentness": "LT5"
       },
       "description": ""
     },
@@ -165,36 +166,36 @@
       "id": "new-2",
       "name": "new 2",
       "range": "3",
-      "absentDays": 1,
+      "lessonsMissed": 5,
       "description": "",
       "categories": {
         "humor": "LT5",
         "teachingSkills": "LT5",
-        "absence": "LT3"
+        "absentness": "LT3"
       }
     },
     {
       "id": "shaahidha",
       "name": "shaahidha",
       "range": "1",
-      "absentDays": 1,
+      "lessonsMissed": 1,
       "description": "",
       "categories": {
         "humor": "LT5",
         "teachingSkills": "LT5",
-        "absence": "LT3"
+        "absentness": "HT5"
       }
     },
     {
       "id": "alim",
       "name": "Alim",
       "range": "1",
-      "absentDays": 0,
+      "lessonsMissed": 0,
       "description": "",
       "categories": {
         "humor": "LT3",
         "teachingSkills": "LT5",
-        "absence": "LT5"
+        "absentness": "LT5"
       }
     }
   ]

@@ -60,7 +60,7 @@ function sortByPointsDesc(teachers) {
 
 function sortByAbsenceDesc(teachers) {
   return [...teachers].sort((a, b) => {
-    if (Number(b.absentDays) !== Number(a.absentDays)) return Number(b.absentDays) - Number(a.absentDays);
+    if (Number(b.lessonsMissed) !== Number(a.lessonsMissed)) return Number(b.lessonsMissed) - Number(a.lessonsMissed);
     return String(a.name).localeCompare(String(b.name));
   });
 }
@@ -155,7 +155,7 @@ function modalApi() {
     const metaRows = [
       ["ID", teacher.id ?? "-"],
       ["Range", teacher.range ?? "-"],
-      ["Days absent", String(teacher.absentDays ?? 0)]
+      ["Lessons Missed", String(teacher.lessonsMissed ?? 0)],
     ];
 
     meta.innerHTML = "";
@@ -258,7 +258,7 @@ function renderTop3Absence(container, absenceSorted, pointsByTier, categories, m
       rank,
       titleHtml,
       subtitle: "",
-      rightPills: [`Absent: ${teacher.absentDays}`],
+      rightPills: [`Absent: ${teacher.lessonsMissed}`],
     });
     item.addEventListener("click", () => modal.openTeacher(teacher, pointsByTier, categories));
     container.appendChild(item);
@@ -299,7 +299,7 @@ function renderFullAbsence(container, absenceSorted, pointsByTier, categories, m
       rank,
       titleHtml,
       subtitle: "",
-      rightPills: [`Absent: ${teacher.absentDays}`],
+      rightPills: [`Absent: ${teacher.lessonsMissed}`],
     });
 
     item.addEventListener("click", () => modal.openTeacher(teacher, pointsByTier, categories));
