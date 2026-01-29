@@ -27,8 +27,7 @@
         "teachingSkills": "LT5",
         "absentness": "LT5"
       },
-      "description": "",
-      "absentDays": 1
+      "description": ""
     },
     {
       "id": "seema",
@@ -60,7 +59,7 @@
       "range": "1",
       "lessonsMissed": 0,
       "categories": {
-        "humor": "HT4",
+        "humor": "LT3",
         "teachingSkills": "LT5",
         "absentness": "LT5"
       },
@@ -132,7 +131,7 @@
       "range": "3",
       "lessonsMissed": 0,
       "categories": {
-        "humor": "HT4",
+        "humor": "LT3",
         "teachingSkills": "LT5",
         "absentness": "LT5"
       },
@@ -146,7 +145,7 @@
       "categories": {
         "humor": "LT5",
         "teachingSkills": "LT5",
-        "absentness": "HT5"
+        "absentness": "LT3"
       },
       "description": ""
     },
@@ -183,7 +182,7 @@
       "categories": {
         "humor": "LT5",
         "teachingSkills": "LT5",
-        "absentness": "HT5"
+        "absentness": "LT3"
       }
     },
     {
