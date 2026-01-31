@@ -333,3 +333,20 @@ async function main() {
 }
 
 document.addEventListener("DOMContentLoaded", main);
+
+// Handle page transitions
+document.addEventListener("click", function(e) {
+  const link = e.target.closest("a");
+  if (link && link.href && link.hostname === window.location.hostname) {
+    e.preventDefault();
+    document.body.classList.add("page-transition");
+    setTimeout(() => {
+      window.location.href = link.href;
+    }, 50);
+  }
+});
+
+// Remove transition class when page loads
+window.addEventListener("pageshow", function() {
+  document.body.classList.remove("page-transition");
+});

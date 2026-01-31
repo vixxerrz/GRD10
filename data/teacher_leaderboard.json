@@ -24,7 +24,7 @@
       "lessonsMissed": 0,
       "categories": {
         "humor": "LT4",
-        "teachingSkills": "LT5",
+        "teachingSkills": "HT5",
         "absentness": "LT5"
       },
       "description": ""
@@ -36,7 +36,7 @@
       "lessonsMissed": 0,
       "categories": {
         "humor": "LT4",
-        "teachingSkills": "LT5",
+        "teachingSkills": "HT4",
         "absentness": "LT5"
       },
       "description": ""
@@ -60,7 +60,7 @@
       "lessonsMissed": 0,
       "categories": {
         "humor": "LT3",
-        "teachingSkills": "LT5",
+        "teachingSkills": "HT5",
         "absentness": "LT5"
       },
       "description": ""
@@ -84,7 +84,7 @@
       "lessonsMissed": 0,
       "categories": {
         "humor": "HT5",
-        "teachingSkills": "LT5",
+        "teachingSkills": "HT5",
         "absentness": "LT5"
       },
       "description": ""
@@ -108,7 +108,7 @@
       "lessonsMissed": 0,
       "categories": {
         "humor": "LT5",
-        "teachingSkills": "LT5",
+        "teachingSkills": "LT4",
         "absentness": "LT5"
       },
       "description": ""
@@ -120,7 +120,7 @@
       "lessonsMissed": 0,
       "categories": {
         "humor": "LT5",
-        "teachingSkills": "LT5",
+        "teachingSkills": "LT4",
         "absentness": "LT5"
       },
       "description": ""
@@ -132,7 +132,7 @@
       "lessonsMissed": 0,
       "categories": {
         "humor": "LT3",
-        "teachingSkills": "LT5",
+        "teachingSkills": "LT4",
         "absentness": "LT5"
       },
       "description": ""
@@ -145,7 +145,7 @@
       "categories": {
         "humor": "LT5",
         "teachingSkills": "LT5",
-        "absentness": "LT3"
+        "absentness": "HT5"
       },
       "description": ""
     },
@@ -156,7 +156,7 @@
       "lessonsMissed": 0,
       "categories": {
         "humor": "LT3",
-        "teachingSkills": "LT5",
+        "teachingSkills": "LT4",
         "absentness": "LT5"
       },
       "description": ""
@@ -182,7 +182,7 @@
       "categories": {
         "humor": "LT5",
         "teachingSkills": "LT5",
-        "absentness": "LT3"
+        "absentness": "HT5"
       }
     },
     {
@@ -193,7 +193,7 @@
       "description": "",
       "categories": {
         "humor": "LT3",
-        "teachingSkills": "LT5",
+        "teachingSkills": "LT4",
         "absentness": "LT5"
       }
     }
