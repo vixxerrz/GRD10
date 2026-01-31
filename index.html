@@ -42,17 +42,17 @@
       <section class="section reveal">
         <h3 class="section-title">Resources</h3>
         <div class="resources">
-          <a class="resource" href="mtt.png" target="_blank" rel="noreferrer">
+          <a class="resource" href="#" data-image="mtt.png" data-title="Mendel Class Timetable">
             <div>Mendel Class Timetable</div>
-            <small>Opens the image</small>
+            <small>Click to preview</small>
           </a>
-          <a class="resource" href="ftt.png" target="_blank" rel="noreferrer">
+          <a class="resource" href="#" data-image="ftt.png" data-title="Ford Class Timetable">
             <div>Ford Class Timetable</div>
-            <small>Opens the image</small>
+            <small>Click to preview</small>
           </a>
-          <a class="resource" href="ctt.png" target="_blank" rel="noreferrer">
+          <a class="resource" href="#" data-image="ctt.png" data-title="Curie Class Timetable">
             <div>Curie Class Timetable</div>
-            <small>Opens the image</small>
+            <small>Click to preview</small>
           </a>
           <a class="resource" href="acadamiccal.pdf" download>
             <div>Acadamic calendar</div>
@@ -99,6 +99,18 @@
             </thead>
             <tbody id="modalCategoryBody"></tbody>
           </table>
+        </div>
+      </div>
+    </div>
+
+    <div id="imageModalBackdrop" class="image-preview-backdrop" role="dialog" aria-modal="true" aria-label="Image preview">
+      <div class="image-preview-container">
+        <div class="image-preview-header">
+          <h3 id="imageModalTitle" class="image-preview-title">Image Preview</h3>
+          <button id="imageModalClose" class="image-preview-close" type="button">X</button>
+        </div>
+        <div class="image-preview-content">
+          <img id="imageModalImg" src="" alt="" class="preview-image">
         </div>
       </div>
     </div>

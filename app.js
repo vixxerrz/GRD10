@@ -334,19 +334,75 @@ async function main() {
 
 document.addEventListener("DOMContentLoaded", main);
 
-// Handle page transitions
-document.addEventListener("click", function(e) {
-  const link = e.target.closest("a");
-  if (link && link.href && link.hostname === window.location.hostname) {
-    e.preventDefault();
-    document.body.classList.add("page-transition");
-    setTimeout(() => {
-      window.location.href = link.href;
-    }, 50);
-  }
-});
+// Handle page transitions - DISABLED FOR TESTING
+// document.addEventListener("click", function(e) {
+//   const link = e.target.closest("a");
+//   if (link && link.href && link.hostname === window.location.hostname) {
+//     e.preventDefault();
+//     document.body.classList.add("page-transition");
+//     setTimeout(() => {
+//       window.location.href = link.href;
+//     }, 50);
+//   }
+// });
 
 // Remove transition class when page loads
 window.addEventListener("pageshow", function() {
   document.body.classList.remove("page-transition");
+});
+
+// Image preview modal functionality
+function imageModalApi() {
+  const backdrop = document.getElementById("imageModalBackdrop");
+  const title = document.getElementById("imageModalTitle");
+  const img = document.getElementById("imageModalImg");
+  const closeBtn = document.getElementById("imageModalClose");
+
+  function close() {
+    backdrop?.classList.remove("open");
+    img.src = "";
+    img.alt = "";
+  }
+
+  function openImage(imageSrc, imageTitle) {
+    if (!backdrop || !title || !img) return;
+
+    title.textContent = imageTitle;
+    img.src = imageSrc;
+    img.alt = imageTitle;
+    backdrop.classList.add("open");
+  }
+
+  // Close on backdrop click
+  backdrop?.addEventListener("click", function(e) {
+    if (e.target === backdrop) {
+      close();
+    }
+  });
+
+  // Close on button click
+  closeBtn?.addEventListener("click", close);
+
+  // Close on Escape key
+  document.addEventListener("keydown", function(e) {
+    if (e.key === "Escape" && backdrop?.classList.contains("open")) {
+      close();
+    }
+  });
+
+  return { openImage, close };
+}
+
+// Initialize image modal
+const imageModal = imageModalApi();
+
+// Handle image resource clicks
+document.addEventListener("click", function(e) {
+  const resourceLink = e.target.closest(".resource[data-image]");
+  if (resourceLink) {
+    e.preventDefault();
+    const imageSrc = resourceLink.dataset.image;
+    const imageTitle = resourceLink.dataset.title;
+    imageModal.openImage(imageSrc, imageTitle);
+  }
 });
