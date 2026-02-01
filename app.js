@@ -138,72 +138,72 @@ function modalApi() {
   const backdrop = document.getElementById("modalBackdrop");
   const title = document.getElementById("modalTitle");
   const meta = document.getElementById("modalMeta");
+  const totalPoints = document.getElementById("modalTotalPoints");
   const description = document.getElementById("modalDescription");
-  const tableBody = document.getElementById("modalCategoryBody");
-  const total = document.getElementById("modalTotalPoints");
+  const categoryBody = document.getElementById("modalCategoryBody");
   const closeBtn = document.getElementById("modalClose");
 
   function close() {
-    backdrop?.classList.remove("open");
+    if (!backdrop) return;
+    
+    // Add closing class for outro animation
+    backdrop.classList.add("closing");
+    
+    // Wait for animation to complete before removing open class
+    setTimeout(() => {
+      backdrop.classList.remove("open", "closing");
+    }, 250);
   }
 
-  function openTeacher(teacher, pointsByTier, categories) {
-    if (!backdrop || !title || !meta || !description || !tableBody || !total) return;
+  function open(teacher, pointsByTier, categories, clickEvent = null) {
+    if (!backdrop || !title || !meta || !totalPoints || !description || !categoryBody) return;
 
     title.textContent = teacher.name;
+    meta.innerHTML = `
+      <div>ID</div>
+      <div>${teacher.id}</div>
+      <div>Range</div>
+      <div>${teacher.range}</div>
+      <div>Lessons Missed</div>
+      <div>${teacher.lessonsMissed}</div>
+    `;
+    totalPoints.textContent = teacher.totalPoints;
+    description.textContent = teacher.description || "No description available";
 
-    const metaRows = [
-      ["ID", teacher.id ?? "-"],
-      ["Range", teacher.range ?? "-"],
-      ["Lessons Missed", String(teacher.lessonsMissed ?? 0)],
-    ];
-
-    meta.innerHTML = "";
-    for (const [k, v] of metaRows) {
-      const dk = document.createElement("div");
-      dk.textContent = k;
-      const dv = document.createElement("div");
-      dv.textContent = v;
-      meta.appendChild(dk);
-      meta.appendChild(dv);
-    }
-
-    description.textContent = teacher.description ?? "";
-
-    tableBody.innerHTML = "";
-    for (const cat of categories) {
+    // Show categories
+    categoryBody.innerHTML = categories.map((cat) => {
       const tier = normalizeTier(teacher.categories?.[cat]);
-      const pts = pointsForTier(pointsByTier, tier);
-
-      const tr = document.createElement("tr");
-      const td1 = document.createElement("td");
-      td1.textContent = cat;
-      const td2 = document.createElement("td");
-      td2.textContent = tierLabel(tier);
-      const td3 = document.createElement("td");
-      td3.textContent = String(pts);
-
-      tr.appendChild(td1);
-      tr.appendChild(td2);
-      tr.appendChild(td3);
-      tableBody.appendChild(tr);
-    }
-
-    const totalPoints = (categories || []).reduce((acc, c) => acc + pointsForTier(pointsByTier, teacher.categories?.[c]), 0);
-    total.textContent = String(totalPoints);
+      const points = pointsForTier(pointsByTier, tier);
+      return `
+        <tr>
+          <td>${cat}</td>
+          <td>${tierLabel(tier)}</td>
+          <td>${points}</td>
+        </tr>
+      `;
+    }).join("");
 
     backdrop.classList.add("open");
   }
 
-  backdrop?.addEventListener("click", (e) => {
-    if (e.target === backdrop) close();
-  });
-  closeBtn?.addEventListener("click", close);
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") close();
+  // Close on backdrop click
+  backdrop?.addEventListener("click", function(e) {
+    if (e.target === backdrop) {
+      close();
+    }
   });
 
-  return { openTeacher, close };
+  // Close on button click
+  closeBtn?.addEventListener("click", close);
+
+  // Close on Escape key
+  document.addEventListener("keydown", function(e) {
+    if (e.key === "Escape" && backdrop?.classList.contains("open")) {
+      close();
+    }
+  });
+
+  return { open, close };
 }
 
 async function loadData() {
@@ -239,7 +239,7 @@ function renderTop3Points(container, teachersSorted, pointsByTier, categories, m
       subtitle: "",
       rightPills: [`Points: ${t.totalPoints}`],
     });
-    item.addEventListener("click", () => modal.openTeacher(t, pointsByTier, categories));
+    item.addEventListener("click", (e) => modal.open(t, pointsByTier, categories, e));
     container.appendChild(item);
   });
 }
@@ -258,9 +258,9 @@ function renderTop3Absence(container, absenceSorted, pointsByTier, categories, m
       rank,
       titleHtml,
       subtitle: "",
-      rightPills: [`Absent: ${teacher.lessonsMissed}`],
+      rightPills: [`Missed: ${teacher.lessonsMissed}`],
     });
-    item.addEventListener("click", () => modal.openTeacher(teacher, pointsByTier, categories));
+    item.addEventListener("click", (e) => modal.open(teacher, pointsByTier, categories, e));
     container.appendChild(item);
   });
 }
@@ -281,7 +281,7 @@ function renderFullPoints(container, teachersSorted, pointsByTier, categories, m
       rightPills: [`Points: ${t.totalPoints}`],
     });
 
-    item.addEventListener("click", () => modal.openTeacher(t, pointsByTier, categories));
+    item.addEventListener("click", (e) => modal.open(t, pointsByTier, categories, e));
     container.appendChild(item);
   });
 }
@@ -299,10 +299,10 @@ function renderFullAbsence(container, absenceSorted, pointsByTier, categories, m
       rank,
       titleHtml,
       subtitle: "",
-      rightPills: [`Absent: ${teacher.lessonsMissed}`],
+      rightPills: [`Missed: ${teacher.lessonsMissed}`],
     });
 
-    item.addEventListener("click", () => modal.openTeacher(teacher, pointsByTier, categories));
+    item.addEventListener("click", (e) => modal.open(teacher, pointsByTier, categories, e));
     container.appendChild(item);
   });
 }
@@ -359,17 +359,26 @@ function imageModalApi() {
   const closeBtn = document.getElementById("imageModalClose");
 
   function close() {
-    backdrop?.classList.remove("open");
-    img.src = "";
-    img.alt = "";
+    if (!backdrop) return;
+    
+    // Add closing class for outro animation
+    backdrop.classList.add("closing");
+    
+    // Wait for animation to complete before cleaning up
+    setTimeout(() => {
+      backdrop.classList.remove("open", "closing");
+      img.src = "";
+      img.alt = "";
+    }, 250);
   }
 
-  function openImage(imageSrc, imageTitle) {
+  function openImage(imageSrc, imageTitle, clickEvent = null) {
     if (!backdrop || !title || !img) return;
 
     title.textContent = imageTitle;
     img.src = imageSrc;
     img.alt = imageTitle;
+    
     backdrop.classList.add("open");
   }
 
@@ -403,6 +412,6 @@ document.addEventListener("click", function(e) {
     e.preventDefault();
     const imageSrc = resourceLink.dataset.image;
     const imageTitle = resourceLink.dataset.title;
-    imageModal.openImage(imageSrc, imageTitle);
+    imageModal.openImage(imageSrc, imageTitle, e);
   }
 });

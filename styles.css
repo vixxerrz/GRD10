@@ -38,23 +38,15 @@ body::before {
   position: fixed;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(45deg, 
-    rgba(34, 197, 94, 0.18) 0%,
-    transparent 25%,
-    rgba(22, 163, 74, 0.14) 50%,
-    transparent 75%,
-    rgba(251, 113, 133, 0.10) 100%);
-  background-size: 300% 300%;
+  background: radial-gradient(circle at 25% 20%, rgba(34, 197, 94, 0.12), transparent 50%),
+              radial-gradient(circle at 75% 30%, rgba(22, 163, 74, 0.08), transparent 50%),
+              radial-gradient(circle at 50% 80%, rgba(251, 113, 133, 0.06), transparent 50%);
   filter: blur(40px);
-  animation: backgroundGradientShift 12s ease-in-out infinite;
 }
 
-@keyframes backgroundGradientShift {
-  0%, 100% {
-    background-position: 0% 100%;
-  }
-  50% {
-    background-position: 100% 0%;
+@media (max-width: 640px) {
+  body::before {
+    filter: blur(25px);
   }
 }
 
@@ -415,6 +407,7 @@ a:hover {
 
 .image-preview-backdrop.open {
   display: flex;
+  animation: backdropFadeIn 0.3s ease-out;
 }
 
 .image-preview-container {
@@ -426,6 +419,19 @@ a:hover {
   max-height: 90vh;
   overflow: auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.image-preview-backdrop.open .image-preview-container {
+  opacity: 1;
+}
+
+.image-preview-backdrop.closing .image-preview-container {
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.image-preview-backdrop.closing {
+  pointer-events: none;
 }
 
 .image-preview-header {
@@ -473,6 +479,7 @@ a:hover {
 
 .modal-backdrop.open {
   display: flex;
+  animation: backdropFadeIn 0.3s ease-out;
 }
 
 .image-modal-backdrop.open {
@@ -497,6 +504,37 @@ a:hover {
               inset 0 1px 0 rgba(255, 255, 255, 0.1);
   position: relative;
   animation: modalGradientShift 8s ease-in-out infinite;
+}
+
+.modal-backdrop.open .modal {
+  opacity: 1;
+}
+
+.modal-backdrop.closing .modal {
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.modal-backdrop.closing {
+  pointer-events: none;
+}
+
+@keyframes backdropFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes backdropFadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes modalGradientShift {
