@@ -491,11 +491,13 @@ a:hover {
   border: 1px solid rgba(34, 197, 94, 0.2);
   background: linear-gradient(135deg, 
     rgba(11, 16, 32, 0.95) 0%,
-    rgba(17, 24, 39, 0.92) 25%,
-    rgba(34, 197, 94, 0.08) 50%,
-    rgba(22, 163, 74, 0.06) 75%,
+    rgba(17, 24, 39, 0.92) 20%,
+    rgba(34, 197, 94, 0.06) 35%,
+    rgba(22, 163, 74, 0.04) 50%,
+    rgba(251, 113, 133, 0.03) 65%,
+    rgba(17, 24, 39, 0.92) 80%,
     rgba(11, 16, 32, 0.95) 100%);
-  background-size: 200% 200%;
+  background-size: 300% 300%;
   backdrop-filter: blur(20px);
   border-radius: 20px;
   padding: 20px;
@@ -503,7 +505,7 @@ a:hover {
               0 0 80px rgba(34, 197, 94, 0.1),
               inset 0 1px 0 rgba(255, 255, 255, 0.1);
   position: relative;
-  animation: modalGradientShift 8s ease-in-out infinite;
+  animation: modalGradientShift 12s ease-in-out infinite;
 }
 
 .modal-backdrop.open .modal {
@@ -552,13 +554,15 @@ a:hover {
   inset: 0;
   border-radius: 20px;
   background: linear-gradient(135deg,
-    rgba(34, 197, 94, 0.03) 0%,
-    transparent 30%,
-    transparent 70%,
-    rgba(34, 197, 94, 0.03) 100%);
-  background-size: 300% 300%;
+    rgba(34, 197, 94, 0.02) 0%,
+    transparent 20%,
+    rgba(22, 163, 74, 0.02) 40%,
+    transparent 60%,
+    rgba(251, 113, 133, 0.015) 80%,
+    transparent 100%);
+  background-size: 400% 400%;
   pointer-events: none;
-  animation: modalOverlayShift 12s ease-in-out infinite reverse;
+  animation: modalOverlayShift 16s ease-in-out infinite reverse;
 }
 
 @keyframes modalOverlayShift {
