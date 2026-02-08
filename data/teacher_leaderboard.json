@@ -21,7 +21,7 @@
       "id": "hamzath",
       "name": "Hamzath",
       "range": "1",
-      "lessonsMissed": 0,
+      "lessonsMissed": 2,
       "categories": {
         "humor": "LT4",
         "teachingSkills": "HT5",
@@ -71,7 +71,7 @@
       "range": "3",
       "lessonsMissed": 2,
       "categories": {
-        "humor": "HT4",
+        "humor": "LT3",
         "teachingSkills": "LT5",
         "absentness": "LT4"
       },
@@ -84,7 +84,7 @@
       "lessonsMissed": 0,
       "categories": {
         "humor": "HT5",
-        "teachingSkills": "HT5",
+        "teachingSkills": "LT4",
         "absentness": "LT5"
       },
       "description": ""
@@ -107,8 +107,8 @@
       "range": "1",
       "lessonsMissed": 0,
       "categories": {
-        "humor": "LT5",
-        "teachingSkills": "LT4",
+        "humor": "HT5",
+        "teachingSkills": "HT4",
         "absentness": "LT5"
       },
       "description": ""
@@ -131,7 +131,7 @@
       "range": "3",
       "lessonsMissed": 0,
       "categories": {
-        "humor": "HT4",
+        "humor": "LT3",
         "teachingSkills": "HT4",
         "absentness": "LT5"
       },
@@ -141,11 +141,11 @@
       "id": "saara",
       "name": "Saara",
       "range": "1",
-      "lessonsMissed": 1,
+      "lessonsMissed": 3,
       "categories": {
         "humor": "LT5",
         "teachingSkills": "LT5",
-        "absentness": "HT5"
+        "absentness": "HT4"
       },
       "description": ""
     },
@@ -165,7 +165,7 @@
       "id": "new-2",
       "name": "new 2",
       "range": "3",
-      "lessonsMissed": 16,
+      "lessonsMissed": 19,
       "description": "",
       "categories": {
         "humor": "LT5",
@@ -177,12 +177,12 @@
       "id": "shaahidha",
       "name": "shaahidha",
       "range": "1",
-      "lessonsMissed": 2,
+      "lessonsMissed": 1,
       "description": "",
       "categories": {
         "humor": "HT5",
         "teachingSkills": "LT4",
-        "absentness": "HT4"
+        "absentness": "HT5"
       }
     },
     {
@@ -192,8 +192,8 @@
       "lessonsMissed": 0,
       "description": "",
       "categories": {
-        "humor": "LT3",
-        "teachingSkills": "LT4",
+        "humor": "HT4",
+        "teachingSkills": "LT2",
         "absentness": "LT5"
       }
     }
