@@ -23,7 +23,7 @@
       "range": "1",
       "lessonsMissed": 2,
       "categories": {
-        "humor": "LT4",
+        "humor": "HT5",
         "teachingSkills": "HT5",
         "absentness": "LT5"
       },
@@ -71,8 +71,8 @@
       "range": "3",
       "lessonsMissed": 2,
       "categories": {
-        "humor": "LT3",
-        "teachingSkills": "LT5",
+        "humor": "HT4",
+        "teachingSkills": "HT5",
         "absentness": "LT4"
       },
       "description": ""
@@ -165,7 +165,7 @@
       "id": "new-2",
       "name": "new 2",
       "range": "3",
-      "lessonsMissed": 19,
+      "lessonsMissed": 17,
       "description": "",
       "categories": {
         "humor": "LT5",
