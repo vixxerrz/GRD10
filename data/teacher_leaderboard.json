@@ -23,7 +23,7 @@
       "range": "1",
       "lessonsMissed": 2,
       "categories": {
-        "humor": "HT5",
+        "humor": "LT4",
         "teachingSkills": "HT5",
         "absentness": "LT5"
       },
@@ -71,8 +71,8 @@
       "range": "3",
       "lessonsMissed": 2,
       "categories": {
-        "humor": "HT4",
-        "teachingSkills": "HT5",
+        "humor": "LT3",
+        "teachingSkills": "LT5",
         "absentness": "LT4"
       },
       "description": ""
@@ -165,7 +165,7 @@
       "id": "new-2",
       "name": "new 2",
       "range": "3",
-      "lessonsMissed": 17,
+      "lessonsMissed": 19,
       "description": "",
       "categories": {
         "humor": "LT5",
@@ -189,12 +189,12 @@
       "id": "alim",
       "name": "Alim",
       "range": "1",
-      "lessonsMissed": 0,
+      "lessonsMissed": 1,
       "description": "",
       "categories": {
         "humor": "HT4",
         "teachingSkills": "LT2",
-        "absentness": "LT5"
+        "absentness": "HT5"
       }
     }
   ]
