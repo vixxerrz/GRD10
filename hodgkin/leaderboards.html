@@ -11,7 +11,7 @@
       <div class="container topbar-inner">
         <div class="brand">
           <div class="brand-title">GRD10</div>
-          <div class="brand-sub">Leaderboards + resources</div>
+          <div class="brand-sub">All rankings</div>
         </div>
         <nav class="nav">
           <a href="./index.html">Home</a>
@@ -22,46 +22,26 @@
 
     <main class="container">
       <section class="hero">
-        <h1>GRD10</h1>
+        <h1>Leaderboards</h1>
         <p>
-          Made by The B2B company (Maanu)
+          Teacher leaderboard is based on tier points across categories.
+          Absence leaderboard is based on absent days.
+          Click a teacher to open the overlay.
         </p>
       </section>
 
       <section class="grid section">
         <div class="card col-6">
-          <h2>Top 3: Teacher Points</h2>
-          <div id="top3Points" class="lb-list" data-error-target></div>
+          <h2>Teacher Points (Full)</h2>
+          <div id="fullPoints" class="lb-list" data-error-target></div>
         </div>
         <div class="card col-6">
-          <h2>Top 3: Lesson-missers</h2>
-          <div id="top3Absence" class="lb-list" data-error-target></div>
+          <h2>Lesson-missers (Full)</h2>
+          <div id="fullAbsence" class="lb-list" data-error-target></div>
         </div>
       </section>
 
-      <section class="section reveal">
-        <h3 class="section-title">Resources</h3>
-        <div class="resources">
-          <a class="resource" href="#" data-image="mtt.png" data-title="Mendel Class Timetable">
-            <div>Mendel Class Timetable</div>
-            <small>Click to preview</small>
-          </a>
-          <a class="resource" href="#" data-image="ftt.png" data-title="Ford Class Timetable">
-            <div>Ford Class Timetable</div>
-            <small>Click to preview</small>
-          </a>
-          <a class="resource" href="#" data-image="ctt.png" data-title="Curie Class Timetable">
-            <div>Curie Class Timetable</div>
-            <small>Click to preview</small>
-          </a>
-          <a class="resource" href="acadamiccal.pdf" download>
-            <div>Acadamic calendar</div>
-            <small>Download only (no preview)</small>
-          </a>
-        </div>
-      </section>
-
-      <div class="footer">GRD10 (By the B2B company)</div>
+      <div class="footer">GRD10</div>
     </main>
 
     <div id="modalBackdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-label="Teacher details">
@@ -99,18 +79,6 @@
             </thead>
             <tbody id="modalCategoryBody"></tbody>
           </table>
-        </div>
-      </div>
-    </div>
-
-    <div id="imageModalBackdrop" class="image-preview-backdrop" role="dialog" aria-modal="true" aria-label="Image preview">
-      <div class="image-preview-container">
-        <div class="image-preview-header">
-          <h3 id="imageModalTitle" class="image-preview-title">Image Preview</h3>
-          <button id="imageModalClose" class="image-preview-close" type="button">X</button>
-        </div>
-        <div class="image-preview-content">
-          <img id="imageModalImg" src="" alt="" class="preview-image">
         </div>
       </div>
     </div>

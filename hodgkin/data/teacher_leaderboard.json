@@ -20,19 +20,19 @@
     {
       "id": "hamzath",
       "name": "Hamzath",
-      "range": "1",
-      "lessonsMissed": 5,
+      "range": "Physics",
+      "lessonsMissed": 4,
       "categories": {
         "humor": "LT4",
         "teachingSkills": "HT5",
-        "absentness": "LT3"
+        "absentness": "HT4"
       },
       "description": ""
     },
     {
       "id": "seema",
       "name": "Seema",
-      "range": "2",
+      "range": "Bio",
       "lessonsMissed": 0,
       "categories": {
         "humor": "LT4",
@@ -44,22 +44,10 @@
     {
       "id": "hafeeza",
       "name": "Hafeeza",
-      "range": "3",
+      "range": "Dhivehi",
       "lessonsMissed": 0,
       "categories": {
         "humor": "HT5",
-        "teachingSkills": "LT4",
-        "absentness": "LT5"
-      },
-      "description": ""
-    },
-    {
-      "id": "raeshma",
-      "name": "Reeshma",
-      "range": "1",
-      "lessonsMissed": 0,
-      "categories": {
-        "humor": "LT4",
         "teachingSkills": "LT4",
         "absentness": "LT5"
       },
@@ -68,43 +56,19 @@
     {
       "id": "amjadh",
       "name": "Amjadh",
-      "range": "3",
-      "lessonsMissed": 3,
+      "range": "Quran",
+      "lessonsMissed": 2,
       "categories": {
         "humor": "LT3",
-        "teachingSkills": "LT5",
-        "absentness": "HT4"
-      },
-      "description": ""
-    },
-    {
-      "id": "haritha",
-      "name": "Haritha",
-      "range": "2",
-      "lessonsMissed": 0,
-      "categories": {
-        "humor": "HT5",
         "teachingSkills": "LT4",
-        "absentness": "LT5"
+        "absentness": "HT5"
       },
       "description": ""
     },
     {
-      "id": "sanika",
-      "name": "Sanika",
-      "range": "1",
-      "lessonsMissed": 0,
-      "categories": {
-        "humor": "LT4",
-        "teachingSkills": "LT5",
-        "absentness": "LT5"
-      },
-      "description": ""
-    },
-    {
-      "id": "sareena",
-      "name": "Sareena",
-      "range": "1",
+      "id": "azima",
+      "name": "Azima",
+      "range": "Islam",
       "lessonsMissed": 0,
       "categories": {
         "humor": "HT5",
@@ -114,21 +78,9 @@
       "description": ""
     },
     {
-      "id": "azima",
-      "name": "Azima",
-      "range": "3",
-      "lessonsMissed": 0,
-      "categories": {
-        "humor": "LT5",
-        "teachingSkills": "LT4",
-        "absentness": "LT5"
-      },
-      "description": ""
-    },
-    {
       "id": "niyaaza",
       "name": "Niyaaza",
-      "range": "3",
+      "range": "Maths",
       "lessonsMissed": 0,
       "categories": {
         "humor": "LT3",
@@ -140,61 +92,37 @@
     {
       "id": "saara",
       "name": "Saara",
-      "range": "1",
+      "range": "Chem",
       "lessonsMissed": 3,
       "categories": {
         "humor": "LT5",
         "teachingSkills": "LT5",
-        "absentness": "HT4"
+        "absentness": "LT4"
       },
       "description": ""
     },
     {
       "id": "sijo",
       "name": "Sijo",
-      "range": "3",
-      "lessonsMissed": 2,
+      "range": "English",
+      "lessonsMissed": 4,
       "categories": {
         "humor": "LT3",
         "teachingSkills": "HT3",
-        "absentness": "LT4"
+        "absentness": "HT4"
       },
       "description": ""
     },
     {
       "id": "new-2",
       "name": "new 2",
-      "range": "3",
-      "lessonsMissed": 22,
+      "range": "Comp",
+      "lessonsMissed": 11,
       "description": "",
       "categories": {
         "humor": "LT5",
         "teachingSkills": "LT5",
-        "absentness": "LT2"
-      }
-    },
-    {
-      "id": "shaahidha",
-      "name": "shaahidha",
-      "range": "1",
-      "lessonsMissed": 1,
-      "description": "",
-      "categories": {
-        "humor": "HT5",
-        "teachingSkills": "LT4",
-        "absentness": "HT5"
-      }
-    },
-    {
-      "id": "alim",
-      "name": "Alim",
-      "range": "1",
-      "lessonsMissed": 1,
-      "description": "",
-      "categories": {
-        "humor": "HT4",
-        "teachingSkills": "LT2",
-        "absentness": "HT5"
+        "absentness": "HT3"
       }
     }
   ]
