@@ -35,7 +35,7 @@
       "range": "Bio",
       "lessonsMissed": 0,
       "categories": {
-        "humor": "LT4",
+        "humor": "LT3",
         "teachingSkills": "HT3",
         "absentness": "LT5"
       },
@@ -117,7 +117,7 @@
       "id": "new-2",
       "name": "new 2",
       "range": "Comp",
-      "lessonsMissed": 11,
+      "lessonsMissed": 12,
       "description": "",
       "categories": {
         "humor": "LT5",
