@@ -21,7 +21,7 @@
       "id": "hamzath",
       "name": "Hamzath",
       "range": "1",
-      "lessonsMissed": 5,
+      "lessonsMissed": 4,
       "categories": {
         "humor": "LT4",
         "teachingSkills": "HT5",
@@ -47,7 +47,7 @@
       "range": "3",
       "lessonsMissed": 0,
       "categories": {
-        "humor": "HT5",
+        "humor": "LT4",
         "teachingSkills": "LT4",
         "absentness": "LT5"
       },
@@ -61,7 +61,7 @@
       "categories": {
         "humor": "LT3",
         "teachingSkills": "LT4",
-        "absentness": "HT4"
+        "absentness": "LT4"
       },
       "description": ""
     },
@@ -69,9 +69,9 @@
       "id": "azima",
       "name": "Azima",
       "range": "3",
-      "lessonsMissed": 1,
+      "lessonsMissed": 0,
       "categories": {
-        "humor": "LT5",
+        "humor": "HT5",
         "teachingSkills": "HT4",
         "absentness": "HT5"
       },
@@ -95,8 +95,8 @@
       "range": "1",
       "lessonsMissed": 3,
       "categories": {
-        "humor": "LT5",
-        "teachingSkills": "LT5",
+        "humor": "HT5",
+        "teachingSkills": "HT5",
         "absentness": "HT4"
       },
       "description": ""
@@ -117,12 +117,12 @@
       "id": "new-2",
       "name": "new 2",
       "range": "3",
-      "lessonsMissed": 12,
+      "lessonsMissed": 11,
       "description": "",
       "categories": {
         "humor": "LT5",
         "teachingSkills": "LT5",
-        "absentness": "HT3"
+        "absentness": "LT3"
       }
     }
   ]
