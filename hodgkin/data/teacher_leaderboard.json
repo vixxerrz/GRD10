@@ -20,22 +20,22 @@
     {
       "id": "hamzath",
       "name": "Hamzath",
-      "range": "Physics",
-      "lessonsMissed": 4,
+      "range": "1",
+      "lessonsMissed": 5,
       "categories": {
         "humor": "LT4",
         "teachingSkills": "HT5",
-        "absentness": "HT4"
+        "absentness": "LT3"
       },
       "description": ""
     },
     {
       "id": "seema",
       "name": "Seema",
-      "range": "Bio",
+      "range": "2",
       "lessonsMissed": 0,
       "categories": {
-        "humor": "LT3",
+        "humor": "LT4",
         "teachingSkills": "HT3",
         "absentness": "LT5"
       },
@@ -44,7 +44,7 @@
     {
       "id": "hafeeza",
       "name": "Hafeeza",
-      "range": "Dhivehi",
+      "range": "3",
       "lessonsMissed": 0,
       "categories": {
         "humor": "HT5",
@@ -56,31 +56,31 @@
     {
       "id": "amjadh",
       "name": "Amjadh",
-      "range": "Quran",
+      "range": "3",
       "lessonsMissed": 2,
       "categories": {
         "humor": "LT3",
         "teachingSkills": "LT4",
-        "absentness": "HT5"
+        "absentness": "HT4"
       },
       "description": ""
     },
     {
       "id": "azima",
       "name": "Azima",
-      "range": "Islam",
-      "lessonsMissed": 0,
+      "range": "3",
+      "lessonsMissed": 1,
       "categories": {
-        "humor": "HT5",
+        "humor": "LT5",
         "teachingSkills": "HT4",
-        "absentness": "LT5"
+        "absentness": "HT5"
       },
       "description": ""
     },
     {
       "id": "niyaaza",
       "name": "Niyaaza",
-      "range": "Maths",
+      "range": "3",
       "lessonsMissed": 0,
       "categories": {
         "humor": "LT3",
@@ -92,19 +92,19 @@
     {
       "id": "saara",
       "name": "Saara",
-      "range": "Chem",
+      "range": "1",
       "lessonsMissed": 3,
       "categories": {
         "humor": "LT5",
         "teachingSkills": "LT5",
-        "absentness": "LT4"
+        "absentness": "HT4"
       },
       "description": ""
     },
     {
       "id": "sijo",
       "name": "Sijo",
-      "range": "English",
+      "range": "3",
       "lessonsMissed": 4,
       "categories": {
         "humor": "LT3",
@@ -116,7 +116,7 @@
     {
       "id": "new-2",
       "name": "new 2",
-      "range": "Comp",
+      "range": "3",
       "lessonsMissed": 12,
       "description": "",
       "categories": {
