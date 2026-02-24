@@ -69,7 +69,7 @@
       "id": "azima",
       "name": "Azima",
       "range": "3",
-      "lessonsMissed": 0,
+      "lessonsMissed": 1,
       "categories": {
         "humor": "HT5",
         "teachingSkills": "HT4",
@@ -120,39 +120,27 @@
       "subjects": [
         {
           "hour": "1",
-          "subject": "E",
-          "class": "10Md",
-          "time": "8:45 - 9:15"
+          "subject": "E"
         },
         {
           "hour": "2",
-          "subject": "E",
-          "class": "10Md",
-          "time": "9:15 - 9:45"
+          "subject": "E"
         },
         {
           "hour": "3",
-          "subject": "CS",
-          "class": "10Md",
-          "time": "9:45 - 10:15"
+          "subject": "CS"
         },
         {
           "hour": "4",
-          "subject": "CS",
-          "class": "10Md",
-          "time": "10:15 - 10:45"
+          "subject": "CS"
         },
         {
           "hour": "5",
-          "subject": "D",
-          "class": "10Md",
-          "time": "10:45 - 11:15"
+          "subject": "D"
         },
         {
           "hour": "6",
-          "subject": "Isl",
-          "class": "10Md",
-          "time": "11:15 - 11:45"
+          "subject": "Isl"
         }
       ]
     }
