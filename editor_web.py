@@ -24,8 +24,8 @@ def slugify(s: str) -> str:
 
 
 def ensure_paths(root: str):
-    teachers_path = os.path.join(root, "hodgkin", "data", "teacher_leaderboard.json")
-    absence_path = os.path.join(root, "hodgkin", "data", "absence_leaderboard.json")
+    teachers_path = os.path.join(root, "mendel", "data", "teacher_leaderboard.json")
+    absence_path = os.path.join(root, "mendel", "data", "absence_leaderboard.json")
     return teachers_path, absence_path
 
 def sync_absence_file(teachers_data, absence_data):
@@ -75,7 +75,7 @@ class EditorHandler(SimpleHTTPRequestHandler):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GRD10 Editor</title>
+<title>Mendel Editor</title>
 <style>
 :root {
   --bg: #0b1020;
@@ -154,7 +154,7 @@ button:hover{opacity:0.8}
 </style>
 </head>
 <body>
-<header><h1>Hodgkin Editor</h1></header>
+<header><h1>Mendel Editor</h1></header>
 <main>
 <div class="col col-left">
 <h2>Teachers</h2>
@@ -181,10 +181,16 @@ button:hover{opacity:0.8}
 <thead><tr><th>Tier</th><th>Points</th></tr></thead>
 <tbody></tbody>
 </table>
+<h2>Tomorrow's Timetable</h2>
+<form id="timetableForm">
+<label>Date <input id="timetableDate" placeholder="25.02."></label>
+<div id="timetableSubjects"></div>
+<button type="button" onclick="addTimetableSubject()">Add Subject</button>
+</form>
 </div>
 </main>
 <script>
-let data = {teachers:[], categories:[], pointsByTier:{}};
+let data = {teachers:[], categories:[], pointsByTier:{}, timetable:{}};
 let selectedId = null;
 
 async function load(){
@@ -193,6 +199,7 @@ async function load(){
   renderTeacherList();
   renderCategories();
   renderPointsTable();
+  renderTimetable();
 }
 function renderTeacherList(){
   const ul = document.getElementById('teacherList');
@@ -272,6 +279,35 @@ async function reload(){
   await load(); 
   document.getElementById('description').value = '';
 }
+function renderTimetable(){
+  const tomorrow = data.timetable.tomorrow || {};
+  document.getElementById('timetableDate').value = tomorrow.date || '';
+  const subjectsDiv = document.getElementById('timetableSubjects');
+  subjectsDiv.innerHTML = '';
+  (tomorrow.subjects || []).forEach((subject, index) => {
+    const div = document.createElement('div');
+    div.style.cssText = 'display: flex; gap: 8px; margin-bottom: 8px;';
+    div.innerHTML = `
+      <input placeholder="Hour" value="${subject.hour || ''}" data-field="hour" data-index="${index}" style="width: 60px;">
+      <input placeholder="Subject" value="${subject.subject || ''}" data-field="subject" data-index="${index}" style="width: 80px;">
+      <button type="button" onclick="removeTimetableSubject(${index})" style="background: var(--danger);">Remove</button>
+    `;
+    subjectsDiv.appendChild(div);
+  });
+}
+function addTimetableSubject(){
+  if (!data.timetable.tomorrow) {
+    data.timetable.tomorrow = {date: '', subjects: []};
+  }
+  data.timetable.tomorrow.subjects.push({hour: '', subject: ''});
+  renderTimetable();
+}
+function removeTimetableSubject(index){
+  if (data.timetable.tomorrow && data.timetable.tomorrow.subjects) {
+    data.timetable.tomorrow.subjects.splice(index, 1);
+    renderTimetable();
+  }
+}
 async function saveAll(){
   const t = data.teachers.find(x=>x.id===selectedId);
   if(t){
@@ -290,6 +326,23 @@ async function saveAll(){
     const pts = Number(tr.cells[1].textContent);
     data.pointsByTier[tier] = pts;
   });
+  
+  // Save timetable data
+  if (!data.timetable.tomorrow) {
+    data.timetable.tomorrow = {date: '', subjects: []};
+  }
+  data.timetable.tomorrow.date = document.getElementById('timetableDate').value;
+  
+  const subjectInputs = document.querySelectorAll('#timetableSubjects input[data-field]');
+  const subjectsMap = {};
+  subjectInputs.forEach(input => {
+    const index = input.dataset.index;
+    const field = input.dataset.field;
+    if (!subjectsMap[index]) subjectsMap[index] = {};
+    subjectsMap[index][field] = input.value;
+  });
+  data.timetable.tomorrow.subjects = Object.values(subjectsMap);
+  
   await fetch('/api/save', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(data)});
 }
 load();
@@ -307,6 +360,7 @@ load();
             "teachers": teachers_data.get("teachers", []),
             "categories": teachers_data.get("categories", []),
             "pointsByTier": teachers_data.get("pointsByTier", {}),
+            "timetable": teachers_data.get("timetable", {}),
         }
         self.send_json(payload)
 
@@ -323,6 +377,7 @@ load();
             "pointsByTier": payload.get("pointsByTier", {}),
             "categories": payload.get("categories", []),
             "teachers": payload.get("teachers", []),
+            "timetable": payload.get("timetable", {}),
         }
         
         write_json(self.teachers_path, teachers_data)
@@ -352,3 +407,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

@@ -112,18 +112,49 @@
         "absentness": "HT4"
       },
       "description": ""
-    },
-    {
-      "id": "new-2",
-      "name": "new 2",
-      "range": "3",
-      "lessonsMissed": 12,
-      "description": "",
-      "categories": {
-        "humor": "LT5",
-        "teachingSkills": "LT5",
-        "absentness": "LT3"
-      }
     }
-  ]
+  ],
+  "timetable": {
+    "tomorrow": {
+      "date": "25.02.",
+      "subjects": [
+        {
+          "hour": "1",
+          "subject": "E",
+          "class": "10Md",
+          "time": "8:45 - 9:15"
+        },
+        {
+          "hour": "2",
+          "subject": "E",
+          "class": "10Md",
+          "time": "9:15 - 9:45"
+        },
+        {
+          "hour": "3",
+          "subject": "CS",
+          "class": "10Md",
+          "time": "9:45 - 10:15"
+        },
+        {
+          "hour": "4",
+          "subject": "CS",
+          "class": "10Md",
+          "time": "10:15 - 10:45"
+        },
+        {
+          "hour": "5",
+          "subject": "D",
+          "class": "10Md",
+          "time": "10:45 - 11:15"
+        },
+        {
+          "hour": "6",
+          "subject": "Isl",
+          "class": "10Md",
+          "time": "11:15 - 11:45"
+        }
+      ]
+    }
+  }
 }

@@ -162,18 +162,6 @@
       "description": ""
     },
     {
-      "id": "new-2",
-      "name": "new 2",
-      "range": "3",
-      "lessonsMissed": 26,
-      "description": "",
-      "categories": {
-        "humor": "LT5",
-        "teachingSkills": "LT5",
-        "absentness": "LT2"
-      }
-    },
-    {
       "id": "shaahidha",
       "name": "shaahidha",
       "range": "1",

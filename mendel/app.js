@@ -224,6 +224,58 @@ async function loadData() {
   };
 }
 
+function renderTimetable(container, teachersData) {
+  if (!container) return;
+  
+  const timetable = teachersData.timetable;
+  if (!timetable || !timetable.tomorrow) {
+    container.innerHTML = '<div class="lb-item"><div class="lb-left"><div class="lb-primary"><span class="name">No timetable data available</span></div></div></div>';
+    return;
+  }
+  
+  const tomorrow = timetable.tomorrow;
+  const date = tomorrow.date || 'Tomorrow';
+  
+  // Create title element outside of container
+  const titleDiv = document.createElement('div');
+  titleDiv.style.cssText = 'color: var(--text); font-size: 16px; font-weight: 600; margin-bottom: 8px; text-align: center;';
+  titleDiv.textContent = `Timetable tomorrow ${date}`;
+  
+  // Insert title before the container
+  container.parentNode.insertBefore(titleDiv, container);
+  
+  // Create horizontal container for timetable items - more compact
+  const horizontalContainer = document.createElement('div');
+  horizontalContainer.style.cssText = 'display: flex; gap: 2px; justify-content: center;';
+  
+  // Create timetable items styled like leaderboard items
+  (tomorrow.subjects || []).forEach((subject, index) => {
+    const item = document.createElement('div');
+    item.className = 'lb-item';
+    
+    // More space-efficient sizing on desktop
+    const itemWidth = window.innerWidth <= 640 ? 
+      Math.floor((window.innerWidth - 32) / 6) - 4 : 
+      Math.min(100, Math.floor((window.innerWidth - 32) / 6)); // Smaller max width
+    
+    item.style.cssText = `width: ${itemWidth}px; flex-shrink: 0; text-align: center; display: flex; justify-content: center; align-items: center; padding: 8px 4px;`;
+    
+    item.innerHTML = `
+      <div class="lb-left" style="width: 100%; display: flex; justify-content: center; align-items: center;">
+        <div class="lb-primary" style="justify-content: center; align-items: center; text-align: center; display: flex; flex-direction: column; gap: 2px;">
+          <span class="rank" style="text-align: center;">#${subject.hour || ''}</span>
+          <span class="name" style="text-align: center;">${subject.subject || ''}</span>
+        </div>
+      </div>
+    `;
+    
+    horizontalContainer.appendChild(item);
+  });
+  
+  container.innerHTML = '';
+  container.appendChild(horizontalContainer);
+}
+
 function renderTop3Points(container, teachersSorted, pointsByTier, categories, modal) {
   if (!container) return;
   container.innerHTML = "";
@@ -327,6 +379,8 @@ async function main() {
 
   renderTop3Points(document.getElementById("top3Points"), data.teachersSorted, pointsByTier, categories, modal);
   renderTop3Absence(document.getElementById("top3Absence"), data.absenceSorted, pointsByTier, categories, modal);
+  
+  renderTimetable(document.getElementById("timetableContainer"), data.teachersData);
 
   renderFullPoints(document.getElementById("fullPoints"), data.teachersSorted, pointsByTier, categories, modal);
   renderFullAbsence(document.getElementById("fullAbsence"), data.absenceSorted, pointsByTier, categories, modal);

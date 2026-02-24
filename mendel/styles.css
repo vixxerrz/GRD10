@@ -819,3 +819,110 @@ a:hover {
     text-align: center;
   }
 }
+
+/* Timetable Styles */
+.timetable-container {
+  padding: 8px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.userRozvrh {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+}
+
+.userRozvrh b {
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.userRozvrh img {
+  display: none;
+}
+
+.rozvrh {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.rozvrhItem {
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.rozvrhItem:hover {
+  background: rgba(34, 197, 94, 0.1);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.rozvrhItemAlign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+}
+
+.hodina {
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 14px;
+}
+
+.predmet {
+  font-weight: 500;
+  color: var(--text);
+  font-size: 16px;
+}
+
+.trieda, .casy {
+  display: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 640px) {
+  .timetable-container .lb-item {
+    flex-shrink: 0 !important;
+    padding: 4px 2px !important;
+  }
+  
+  .timetable-container .lb-item .rank,
+  .timetable-container .lb-item .name {
+    font-size: 10px !important;
+  }
+  
+  .timetable-container > div[style*="display: flex"] {
+    gap: 2px !important;
+    flex-wrap: nowrap !important;
+    overflow: hidden !important;
+  }
+}
