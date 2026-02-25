@@ -119,27 +119,27 @@
       "date": "25.02.",
       "subjects": [
         {
-          "hour": "1",
+          "hour": "",
           "subject": "E"
         },
         {
-          "hour": "2",
+          "hour": "",
           "subject": "Ph"
         },
         {
-          "hour": "3",
+          "hour": "",
           "subject": "CS"
         },
         {
-          "hour": "4",
+          "hour": "",
           "subject": "D"
         },
         {
-          "hour": "5",
+          "hour": "",
           "subject": "Q"
         },
         {
-          "hour": "6",
+          "hour": "",
           "subject": "B"
         }
       ]

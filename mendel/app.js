@@ -374,7 +374,6 @@ function renderTimetable(container, teachersData) {
     item.innerHTML = `
       <div class="lb-left" style="width: 100%; display: flex; justify-content: center; align-items: center;">
         <div class="lb-primary" style="justify-content: center; align-items: center; text-align: center; display: flex; flex-direction: column; gap: 2px;">
-          <span class="rank" style="text-align: center;">#${subject.hour || ''}</span>
           <span class="name" style="text-align: center;">${subject.subject || ''}</span>
         </div>
       </div>
