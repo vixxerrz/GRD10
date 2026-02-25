@@ -124,7 +124,7 @@
         },
         {
           "hour": "2",
-          "subject": "E"
+          "subject": "Ph"
         },
         {
           "hour": "3",
@@ -132,15 +132,15 @@
         },
         {
           "hour": "4",
-          "subject": "CS"
-        },
-        {
-          "hour": "5",
           "subject": "D"
         },
         {
+          "hour": "5",
+          "subject": "Q"
+        },
+        {
           "hour": "6",
-          "subject": "Isl"
+          "subject": "B"
         }
       ]
     }

@@ -134,6 +134,117 @@ function setupReveal() {
   els.forEach((el) => io.observe(el));
 }
 
+function setupSlidingNav() {
+  const nav = document.querySelector(".nav");
+  if (!nav) return;
+  
+  const navItems = nav.querySelectorAll("a");
+  
+  function updateSlidingBg(targetItem) {
+    if (!targetItem) return;
+    
+    const rect = targetItem.getBoundingClientRect();
+    const navRect = nav.getBoundingClientRect();
+    
+    // Create or update sliding background
+    let slidingBg = nav.querySelector(".nav-sliding-bg");
+    if (!slidingBg) {
+      slidingBg = document.createElement("div");
+      slidingBg.className = "nav-sliding-bg";
+      nav.appendChild(slidingBg);
+    }
+    
+    slidingBg.style.cssText = `
+      position: absolute;
+      bottom: 0;
+      left: ${rect.left - navRect.left}px;
+      width: ${rect.width}px;
+      height: ${rect.height}px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: -1;
+      opacity: 1;
+    `;
+  }
+  
+  navItems.forEach(item => {
+    item.addEventListener("mouseenter", () => updateSlidingBg(item));
+    item.addEventListener("focus", () => updateSlidingBg(item));
+  });
+  
+  nav.addEventListener("mouseleave", () => {
+    const slidingBg = nav.querySelector(".nav-sliding-bg");
+    if (slidingBg) {
+      slidingBg.style.opacity = "0";
+    }
+  });
+  
+  // Set initial position for active page
+  const activeItem = nav.querySelector("a[aria-current='page']");
+  if (activeItem) {
+    updateSlidingBg(activeItem);
+  }
+}
+
+function setupSlidingHover() {
+  // Setup sliding hover for leaderboard items
+  const lbContainers = document.querySelectorAll(".lb-list");
+  lbContainers.forEach(container => {
+    const items = container.querySelectorAll(".lb-item");
+    
+    // Create sliding background once
+    let slidingBg = container.querySelector(".sliding-hover-bg");
+    if (!slidingBg) {
+      slidingBg = document.createElement("div");
+      slidingBg.className = "sliding-hover-bg";
+      slidingBg.style.cssText = `
+        position: absolute;
+        background: rgba(34, 197, 94, 0.08);
+        border: 1px solid rgba(34, 197, 94, 0.45);
+        border-radius: var(--radius);
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        z-index: -1;
+        opacity: 0;
+        pointer-events: none;
+      `;
+      container.style.position = "relative";
+      container.appendChild(slidingBg);
+    }
+    
+    function updateSlidingHover(targetItem) {
+      if (!targetItem) return;
+      
+      const rect = targetItem.getBoundingClientRect();
+      const containerRect = container.getBoundingClientRect();
+      
+      // Calculate position relative to container
+      const top = rect.top - containerRect.top;
+      const left = rect.left - containerRect.left;
+      
+      // Update position and size
+      slidingBg.style.transform = `translate(${left}px, ${top}px)`;
+      slidingBg.style.width = `${rect.width}px`;
+      slidingBg.style.height = `${rect.height}px`;
+      slidingBg.style.opacity = "1";
+      
+      console.log('Sliding to:', { top, left, width: rect.width, height: rect.height });
+    }
+    
+    items.forEach((item, index) => {
+      item.addEventListener("mouseenter", () => {
+        console.log(`Hovering item ${index}`);
+        updateSlidingHover(item);
+      });
+    });
+    
+    container.addEventListener("mouseleave", () => {
+      console.log('Mouse left container');
+      slidingBg.style.opacity = "0";
+    });
+  });
+}
+
 function modalApi() {
   const backdrop = document.getElementById("modalBackdrop");
   const title = document.getElementById("modalTitle");
@@ -362,6 +473,8 @@ function renderFullAbsence(container, absenceSorted, pointsByTier, categories, m
 async function main() {
   setActiveNav();
   setupReveal();
+  setupSlidingNav();
+  setupSlidingHover();
 
   const modal = modalApi();
 

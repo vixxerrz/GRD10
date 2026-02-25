@@ -117,7 +117,7 @@ main{
   flex-direction:column;
 }
 .col-left{flex:1}
-.col-right{flex:1}
+.col-right{flex:1; overflow-y: auto; max-height: 80vh;}
 h2{margin:0 0 12px; font-size:16px; font-weight:700}
 ul{
   list-style:none; padding:0; margin:0;
