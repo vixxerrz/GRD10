@@ -21,7 +21,7 @@
       "id": "hamzath",
       "name": "Hamzath",
       "range": "1",
-      "lessonsMissed": 4,
+      "lessonsMissed": 6,
       "categories": {
         "humor": "LT4",
         "teachingSkills": "HT5",
@@ -120,11 +120,7 @@
       "subjects": [
         {
           "hour": "",
-          "subject": "PH"
-        },
-        {
-          "hour": "",
-          "subject": "PH"
+          "subject": "B"
         },
         {
           "hour": "",
@@ -132,15 +128,19 @@
         },
         {
           "hour": "",
-          "subject": "M"
+          "subject": "Isl"
         },
         {
           "hour": "",
-          "subject": "M"
+          "subject": "E"
         },
         {
           "hour": "",
           "subject": "CH"
+        },
+        {
+          "hour": "",
+          "subject": "Dh"
         }
       ]
     }
