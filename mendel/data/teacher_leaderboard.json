@@ -120,8 +120,8 @@
       "lessonsMissed": 0,
       "description": "",
       "categories": {
-        "humor": "LT4",
-        "teachingSkills": "LT4",
+        "humor": "HT5",
+        "teachingSkills": "HT5",
         "absentness": "LT5"
       }
     }
@@ -132,11 +132,15 @@
       "subjects": [
         {
           "hour": "",
-          "subject": "2 E"
+          "subject": "E"
         },
         {
           "hour": "",
-          "subject": "2 CS"
+          "subject": "Ph"
+        },
+        {
+          "hour": "",
+          "subject": "CS"
         },
         {
           "hour": "",
@@ -144,7 +148,11 @@
         },
         {
           "hour": "",
-          "subject": "Isl"
+          "subject": "Q"
+        },
+        {
+          "hour": "",
+          "subject": "B"
         }
       ]
     }
