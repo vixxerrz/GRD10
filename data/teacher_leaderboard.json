@@ -153,11 +153,11 @@
       "id": "sijo",
       "name": "Sijo",
       "range": "3",
-      "lessonsMissed": 2,
+      "lessonsMissed": 4,
       "categories": {
-        "humor": "LT3",
+        "humor": "HT3",
         "teachingSkills": "HT3",
-        "absentness": "LT4"
+        "absentness": "HT4"
       },
       "description": ""
     },
