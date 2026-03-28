@@ -186,14 +186,14 @@
       }
     },
     {
-      "id": "shamna",
-      "name": "Shamna",
+      "id": "shimna",
+      "name": "Shimna",
       "range": "3",
       "lessonsMissed": 0,
       "description": "",
       "categories": {
-        "humor": "LT4",
-        "teachingSkills": "LT4",
+        "humor": "HT5",
+        "teachingSkills": "HT5",
         "absentness": "LT5"
       }
     }

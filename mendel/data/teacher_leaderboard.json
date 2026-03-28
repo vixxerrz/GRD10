@@ -114,8 +114,8 @@
       "description": ""
     },
     {
-      "id": "shamna",
-      "name": "Shamna",
+      "id": "shimna",
+      "name": "Shimna",
       "range": "3",
       "lessonsMissed": 0,
       "description": "",
@@ -132,7 +132,15 @@
       "subjects": [
         {
           "hour": "",
-          "subject": "E"
+          "subject": "2 CH"
+        },
+        {
+          "hour": "",
+          "subject": "2 M"
+        },
+        {
+          "hour": "",
+          "subject": "2 B"
         },
         {
           "hour": "",
@@ -141,18 +149,6 @@
         {
           "hour": "",
           "subject": "CS"
-        },
-        {
-          "hour": "",
-          "subject": "Dh"
-        },
-        {
-          "hour": "",
-          "subject": "Q"
-        },
-        {
-          "hour": "",
-          "subject": "B"
         }
       ]
     }
