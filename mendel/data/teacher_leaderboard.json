@@ -128,7 +128,7 @@
   ],
   "timetable": {
     "tomorrow": {
-      "date": "26/3",
+      "date": "29/3",
       "subjects": [
         {
           "hour": "",
@@ -136,7 +136,11 @@
         },
         {
           "hour": "",
-          "subject": "2 M"
+          "subject": "M"
+        },
+        {
+          "hour": "",
+          "subject": "CS"
         },
         {
           "hour": "",
@@ -148,7 +152,7 @@
         },
         {
           "hour": "",
-          "subject": "CS"
+          "subject": "Dh"
         }
       ]
     }
