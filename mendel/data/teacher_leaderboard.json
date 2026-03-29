@@ -121,7 +121,7 @@
       "description": "",
       "categories": {
         "humor": "HT5",
-        "teachingSkills": "HT5",
+        "teachingSkills": "LT4",
         "absentness": "LT5"
       }
     }
@@ -132,27 +132,27 @@
       "subjects": [
         {
           "hour": "",
-          "subject": "2 CH"
-        },
-        {
-          "hour": "",
           "subject": "M"
         },
         {
           "hour": "",
-          "subject": "CS"
+          "subject": "Isl"
         },
         {
           "hour": "",
-          "subject": "2 B"
+          "subject": "Ch"
         },
         {
           "hour": "",
-          "subject": "Ph"
+          "subject": "E"
         },
         {
           "hour": "",
-          "subject": "Dh"
+          "subject": "Q"
+        },
+        {
+          "hour": "",
+          "subject": "+E"
         }
       ]
     }
