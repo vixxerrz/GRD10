@@ -357,19 +357,19 @@ function renderTimetable(container, teachersData) {
   
   // Create horizontal container for timetable items - more compact
   const horizontalContainer = document.createElement('div');
-  horizontalContainer.style.cssText = 'display: flex; gap: 2px; justify-content: center;';
+  horizontalContainer.style.cssText = `display: flex; gap: ${window.innerWidth <= 640 ? '1px' : '2px'}; justify-content: center;`;
   
   // Create timetable items styled like leaderboard items
   (tomorrow.subjects || []).forEach((subject, index) => {
     const item = document.createElement('div');
     item.className = 'lb-item';
     
-    // More space-efficient sizing on desktop
+    // More space-efficient sizing on desktop, much smaller on mobile
     const itemWidth = window.innerWidth <= 640 ? 
-      Math.floor((window.innerWidth - 32) / 6) - 4 : 
+      Math.floor((window.innerWidth - 32) / 8) - 2 : 
       Math.min(100, Math.floor((window.innerWidth - 32) / 6)); // Smaller max width
     
-    item.style.cssText = `width: ${itemWidth}px; flex-shrink: 0; text-align: center; display: flex; justify-content: center; align-items: center; padding: 8px 4px;`;
+    item.style.cssText = `width: ${itemWidth}px; flex-shrink: 0; text-align: center; display: flex; justify-content: center; align-items: center; padding: ${window.innerWidth <= 640 ? '2px 1px' : '8px 4px'}; min-height: ${window.innerWidth <= 640 ? '40px' : 'auto'};`;
     
     item.innerHTML = `
       <div class="lb-left" style="width: 100%; display: flex; justify-content: center; align-items: center;">

@@ -947,18 +947,29 @@ a:hover {
   
   .timetable-container .lb-item {
     flex-shrink: 0 !important;
-    padding: 4px 2px !important;
+    padding: 2px 1px !important;
+    min-height: 40px !important;
+    width: 45px !important;
   }
   
   .timetable-container .lb-item .rank,
   .timetable-container .lb-item .name {
-    font-size: 10px !important;
+    font-size: 8px !important;
+    line-height: 1.1 !important;
+  }
+  
+  .timetable-container .lb-item .lb-primary {
+    gap: 1px !important;
   }
   
   .timetable-container > div[style*="display: flex"] {
-    gap: 2px !important;
+    gap: 1px !important;
     flex-wrap: nowrap !important;
     overflow: hidden !important;
     justify-content: center !important;
+  }
+  
+  .timetable-container .lb-item .lb-left {
+    width: 100% !important;
   }
 }

@@ -33,7 +33,7 @@
       "id": "seema",
       "name": "Seema",
       "range": "2",
-      "lessonsMissed": 1,
+      "lessonsMissed": 2,
       "categories": {
         "humor": "LT4",
         "teachingSkills": "HT3",
@@ -132,15 +132,7 @@
       "subjects": [
         {
           "hour": "",
-          "subject": "M"
-        },
-        {
-          "hour": "",
-          "subject": "Isl"
-        },
-        {
-          "hour": "",
-          "subject": "Ch"
+          "subject": "2M"
         },
         {
           "hour": "",
@@ -148,11 +140,27 @@
         },
         {
           "hour": "",
-          "subject": "Q"
+          "subject": "Ch"
         },
         {
           "hour": "",
-          "subject": "+E"
+          "subject": "2D"
+        },
+        {
+          "hour": "",
+          "subject": "CS"
+        },
+        {
+          "hour": "",
+          "subject": "Isl"
+        },
+        {
+          "hour": "",
+          "subject": "Ph"
+        },
+        {
+          "hour": "",
+          "subject": "+M"
         }
       ]
     }
