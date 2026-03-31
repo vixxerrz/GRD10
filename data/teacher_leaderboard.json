@@ -33,11 +33,11 @@
       "id": "seema",
       "name": "Seema",
       "range": "2",
-      "lessonsMissed": 3,
+      "lessonsMissed": 4,
       "categories": {
         "humor": "LT4",
         "teachingSkills": "HT3",
-        "absentness": "HT5"
+        "absentness": "HT4"
       },
       "description": ""
     },
