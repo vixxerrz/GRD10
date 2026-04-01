@@ -947,15 +947,16 @@ a:hover {
   
   .timetable-container .lb-item {
     flex-shrink: 0 !important;
-    padding: 2px 1px !important;
-    min-height: 40px !important;
-    width: 45px !important;
+    padding: 1px !important;
+    min-height: 35px !important;
+    width: 36px !important;
+    border-radius: 0px !important;
   }
   
   .timetable-container .lb-item .rank,
   .timetable-container .lb-item .name {
-    font-size: 8px !important;
-    line-height: 1.1 !important;
+    font-size: 5px !important;
+    line-height: 1.0 !important;
   }
   
   .timetable-container .lb-item .lb-primary {

@@ -33,11 +33,11 @@
       "id": "seema",
       "name": "Seema",
       "range": "2",
-      "lessonsMissed": 2,
+      "lessonsMissed": 3,
       "categories": {
         "humor": "LT4",
         "teachingSkills": "HT3",
-        "absentness": "HT5"
+        "absentness": "LT4"
       },
       "description": ""
     },
@@ -128,11 +128,15 @@
   ],
   "timetable": {
     "tomorrow": {
-      "date": "1/4",
+      "date": "2/4",
       "subjects": [
         {
           "hour": "",
-          "subject": "Isl"
+          "subject": "D"
+        },
+        {
+          "hour": "",
+          "subject": "Q"
         },
         {
           "hour": "",
@@ -140,19 +144,27 @@
         },
         {
           "hour": "",
-          "subject": "Ph"
+          "subject": "E"
         },
         {
           "hour": "",
-          "subject": "Ch"
+          "subject": "M"
         },
         {
           "hour": "",
-          "subject": "2CS"
+          "subject": "CS"
         },
         {
           "hour": "",
-          "subject": "2E"
+          "subject": "2Ph"
+        },
+        {
+          "hour": "",
+          "subject": "Isl"
+        },
+        {
+          "hour": "",
+          "subject": "+D"
         }
       ]
     }

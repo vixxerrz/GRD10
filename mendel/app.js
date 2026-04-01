@@ -366,10 +366,10 @@ function renderTimetable(container, teachersData) {
     
     // More space-efficient sizing on desktop, much smaller on mobile
     const itemWidth = window.innerWidth <= 640 ? 
-      Math.floor((window.innerWidth - 32) / 8) - 2 : 
+      Math.floor((window.innerWidth - 32) / 10) : 
       Math.min(100, Math.floor((window.innerWidth - 32) / 6)); // Smaller max width
     
-    item.style.cssText = `width: ${itemWidth}px; flex-shrink: 0; text-align: center; display: flex; justify-content: center; align-items: center; padding: ${window.innerWidth <= 640 ? '2px 1px' : '8px 4px'}; min-height: ${window.innerWidth <= 640 ? '40px' : 'auto'};`;
+    item.style.cssText = `width: ${itemWidth}px; flex-shrink: 0; text-align: center; display: flex; justify-content: center; align-items: center; padding: ${window.innerWidth <= 640 ? '1px' : '8px 4px'}; min-height: ${window.innerWidth <= 640 ? '35px' : 'auto'}; border-radius: ${window.innerWidth <= 640 ? '10px' : 'var(--radius)'};`;
     
     item.innerHTML = `
       <div class="lb-left" style="width: 100%; display: flex; justify-content: center; align-items: center;">
