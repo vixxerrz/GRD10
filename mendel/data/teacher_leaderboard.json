@@ -128,23 +128,11 @@
   ],
   "timetable": {
     "tomorrow": {
-      "date": "2/4",
+      "date": "5/4",
       "subjects": [
         {
           "hour": "",
-          "subject": "D"
-        },
-        {
-          "hour": "",
-          "subject": "Q"
-        },
-        {
-          "hour": "",
-          "subject": "B"
-        },
-        {
-          "hour": "",
-          "subject": "E"
+          "subject": "2Ch"
         },
         {
           "hour": "",
@@ -156,15 +144,19 @@
         },
         {
           "hour": "",
-          "subject": "2Ph"
+          "subject": "2B"
         },
         {
           "hour": "",
-          "subject": "Isl"
+          "subject": "Ph"
         },
         {
           "hour": "",
-          "subject": "+D"
+          "subject": "D"
+        },
+        {
+          "hour": "",
+          "subject": "+Ph"
         }
       ]
     }

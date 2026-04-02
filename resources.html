@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GRD10 - Resources</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <div class="brand">
+          <div class="brand-title">GRD10</div>
+          <div class="brand-sub">Resources</div>
+        </div>
+        <nav class="nav">
+          <a href="./index.html">Home</a>
+          <a href="./leaderboards.html">Leaderboards</a>
+          <a href="./resources.html" aria-current="page">Resources</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <section class="hero">
+        <h1>Resources</h1>
+        <p>
+          Download and preview important documents and timetables.
+        </p>
+      </section>
+
+      <section class="section reveal">
+        <h3 class="section-title">Class Timetables</h3>
+        <div class="resources">
+          <a class="resource" href="#" data-image="mtt.png" data-title="Mendel Class Timetable">
+            <div>Mendel Class Timetable</div>
+            <small>Click to preview</small>
+          </a>
+          <a class="resource" href="#" data-image="ftt.png" data-title="Ford Class Timetable">
+            <div>Ford Class Timetable</div>
+            <small>Click to preview</small>
+          </a>
+          <a class="resource" href="#" data-image="ctt.png" data-title="Curie Class Timetable">
+            <div>Curie Class Timetable</div>
+            <small>Click to preview</small>
+          </a>
+          <a class="resource" href="#" data-image="uttt.jpg" data-title="Unit test timetable">
+            <div>Unit test timetable</div>
+            <small>Click to preview</small>
+          </a>
+          <a class="resource" href="#" data-image="xtratt.png" data-title="Extra timetable">
+            <div>Extra timetable</div>
+            <small>Click to preview</small>
+          </a>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <h3 class="section-title">Other Resources</h3>
+        <div class="resources">
+          <a class="resource" href="#" data-image="acadamiccal.jpg" data-title="Acadamic calendar">
+            <div>Academic Calendar (preview)</div>
+            <small>Click to preview</small>
+          </a>
+          <a class="resource" href="acadamiccal.pdf" download>
+            <div>Academic Calendar (PDF)</div>
+            <small>Download PDF version</small>
+          </a>
+        </div>
+      </section>
+
+      <div class="footer">GRD10 (By the B2B company)</div>
+    </main>
+
+    <div id="imageModalBackdrop" class="image-preview-backdrop" role="dialog" aria-modal="true" aria-label="Image preview">
+      <div class="image-preview-container">
+        <div class="image-preview-header">
+          <h3 id="imageModalTitle" class="image-preview-title">Image Preview</h3>
+          <button id="imageModalClose" class="image-preview-close" type="button">X</button>
+        </div>
+        <div class="image-preview-content">
+          <img id="imageModalImg" src="" alt="" class="preview-image">
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+    <script>
+    function copyToClipboard(text){
+      const decodedText = decodeURIComponent(text);
+      navigator.clipboard.writeText(decodedText).then(() => {
+        alert('Text copied to clipboard!');
+      }).catch(err => {
+        alert('Failed to copy text: ' + err);
+      });
+    }
+    </script>
+  </body>
+</html>
