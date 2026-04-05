@@ -357,17 +357,41 @@ function renderTimetable(container, teachersData) {
   
   // Create horizontal container for timetable items - more compact
   const horizontalContainer = document.createElement('div');
-  horizontalContainer.style.cssText = `display: flex; gap: ${window.innerWidth <= 640 ? '1px' : '2px'}; justify-content: center;`;
+  horizontalContainer.style.cssText = `display: flex; gap: ${window.innerWidth <= 640 ? '2px' : '4px'}; justify-content: center;`;
   
   // Create timetable items styled like leaderboard items
   (tomorrow.subjects || []).forEach((subject, index) => {
     const item = document.createElement('div');
     item.className = 'lb-item';
     
-    // More space-efficient sizing on desktop, much smaller on mobile
-    const itemWidth = window.innerWidth <= 640 ? 
-      Math.floor((window.innerWidth - 32) / 10) : 
-      Math.min(100, Math.floor((window.innerWidth - 32) / 6)); // Smaller max width
+    const subjectText = subject.subject || '';
+    const charCount = subjectText.length;
+    
+    // Calculate width based on character count
+    let itemWidth;
+    if (window.innerWidth <= 640) {
+      // Mobile: more compact sizing
+      if (charCount === 1) {
+        itemWidth = 28; // Very compact for single chars
+      } else if (charCount === 2) {
+        itemWidth = 36; // Small for 2 chars
+      } else if (charCount === 3) {
+        itemWidth = 44; // Medium for 3 chars
+      } else {
+        itemWidth = Math.min(52, 36 + charCount * 2); // Larger for longer text
+      }
+    } else {
+      // Desktop: more compact sizing
+      if (charCount === 1) {
+        itemWidth = 35; // Compact for single chars
+      } else if (charCount === 2) {
+        itemWidth = 45; // Small for 2 chars
+      } else if (charCount === 3) {
+        itemWidth = 55; // Medium for 3 chars
+      } else {
+        itemWidth = Math.min(70, 45 + charCount * 3); // Larger for longer text
+      }
+    }
     
     item.style.cssText = `width: ${itemWidth}px; flex-shrink: 0; text-align: center; display: flex; justify-content: center; align-items: center; padding: ${window.innerWidth <= 640 ? '1px' : '8px 4px'}; min-height: ${window.innerWidth <= 640 ? '35px' : 'auto'}; border-radius: ${window.innerWidth <= 640 ? '10px' : 'var(--radius)'};`;
     
