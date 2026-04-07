@@ -128,31 +128,15 @@
   ],
   "timetable": {
     "tomorrow": {
-      "date": "7/4",
+      "date": "8/4",
       "subjects": [
         {
           "hour": "",
-          "subject": "2M"
-        },
-        {
-          "hour": "",
-          "subject": "E"
-        },
-        {
-          "hour": "",
-          "subject": "Ch"
-        },
-        {
-          "hour": "",
-          "subject": "2D"
-        },
-        {
-          "hour": "",
-          "subject": "CS"
-        },
-        {
-          "hour": "",
           "subject": "Isl"
+        },
+        {
+          "hour": "",
+          "subject": "B"
         },
         {
           "hour": "",
@@ -160,9 +144,18 @@
         },
         {
           "hour": "",
-          "subject": "+CS"
+          "subject": "Ch"
+        },
+        {
+          "hour": "",
+          "subject": "2CS"
+        },
+        {
+          "hour": "",
+          "subject": "2E"
         }
-      ]
+      ],
+      "note": "Comp & Dhivehi test so no islam and chem period"
     }
   }
 }

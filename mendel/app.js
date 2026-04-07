@@ -355,6 +355,14 @@ function renderTimetable(container, teachersData) {
   // Insert title before the container
   container.parentNode.insertBefore(titleDiv, container);
   
+  // Add note if it exists
+  if (tomorrow.note && tomorrow.note.trim()) {
+    const noteDiv = document.createElement('div');
+    noteDiv.style.cssText = 'color: var(--muted); font-size: 14px; font-style: italic; margin-bottom: 12px; text-align: center; padding: 8px; background: var(--panel); border-radius: 8px; border: 1px solid var(--border);';
+    noteDiv.textContent = `Note: ${tomorrow.note}`;
+    container.parentNode.insertBefore(noteDiv, container);
+  }
+  
   // Create horizontal container for timetable items - more compact
   const horizontalContainer = document.createElement('div');
   horizontalContainer.style.cssText = `display: flex; gap: ${window.innerWidth <= 640 ? '2px' : '4px'}; justify-content: center;`;

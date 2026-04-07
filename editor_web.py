@@ -184,8 +184,10 @@ button:hover{opacity:0.8}
 <h2>Tomorrow's Timetable</h2>
 <form id="timetableForm">
 <label>Date <input id="timetableDate" placeholder="25.02."></label>
+<label>Note <textarea id="timetableNote" rows="2" placeholder="Add a note for tomorrow's timetable..."></textarea>
 <div id="timetableSubjects"></div>
 <button type="button" onclick="addTimetableSubject()">Add Subject</button>
+<button type="button" onclick="saveTimetable()">Save Timetable</button>
 </form>
 </div>
 </main>
@@ -282,6 +284,7 @@ async function reload(){
 function renderTimetable(){
   const tomorrow = data.timetable.tomorrow || {};
   document.getElementById('timetableDate').value = tomorrow.date || '';
+  document.getElementById('timetableNote').value = tomorrow.note || '';
   const subjectsDiv = document.getElementById('timetableSubjects');
   subjectsDiv.innerHTML = '';
   (tomorrow.subjects || []).forEach((subject, index) => {
@@ -332,6 +335,7 @@ async function saveAll(){
     data.timetable.tomorrow = {date: '', subjects: []};
   }
   data.timetable.tomorrow.date = document.getElementById('timetableDate').value;
+  data.timetable.tomorrow.note = document.getElementById('timetableNote').value;
   
   const subjectInputs = document.querySelectorAll('#timetableSubjects input[data-field]');
   const subjectsMap = {};
@@ -344,6 +348,27 @@ async function saveAll(){
   data.timetable.tomorrow.subjects = Object.values(subjectsMap);
   
   await fetch('/api/save', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(data)});
+}
+async function saveTimetable(){
+  // Save timetable data only
+  if (!data.timetable.tomorrow) {
+    data.timetable.tomorrow = {date: '', subjects: []};
+  }
+  data.timetable.tomorrow.date = document.getElementById('timetableDate').value;
+  data.timetable.tomorrow.note = document.getElementById('timetableNote').value;
+  
+  const subjectInputs = document.querySelectorAll('#timetableSubjects input[data-field]');
+  const subjectsMap = {};
+  subjectInputs.forEach(input => {
+    const index = input.dataset.index;
+    const field = input.dataset.field;
+    if (!subjectsMap[index]) subjectsMap[index] = {};
+    subjectsMap[index][field] = input.value;
+  });
+  data.timetable.tomorrow.subjects = Object.values(subjectsMap);
+  
+  await fetch('/api/save', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(data)});
+  alert('Timetable saved!');
 }
 load();
 </script>
