@@ -57,7 +57,7 @@
       "id": "amjadh",
       "name": "Amjadh",
       "range": "3",
-      "lessonsMissed": 2,
+      "lessonsMissed": 3,
       "categories": {
         "humor": "LT3",
         "teachingSkills": "LT4",
@@ -128,15 +128,11 @@
   ],
   "timetable": {
     "tomorrow": {
-      "date": "9/4",
+      "date": "11/4",
       "subjects": [
         {
           "hour": "",
-          "subject": "D"
-        },
-        {
-          "hour": "",
-          "subject": "Q"
+          "subject": "Ph"
         },
         {
           "hour": "",
@@ -144,26 +140,10 @@
         },
         {
           "hour": "",
-          "subject": "E"
-        },
-        {
-          "hour": "",
-          "subject": "M"
-        },
-        {
-          "hour": "",
           "subject": "CS"
-        },
-        {
-          "hour": "",
-          "subject": "2Ph"
-        },
-        {
-          "hour": "",
-          "subject": "Isl"
         }
       ],
-      "note": "Chem and Quran unit test"
+      "note": "(All extra Classes 1hr 15 mins each (8 to 11:15)"
     }
   }
 }
