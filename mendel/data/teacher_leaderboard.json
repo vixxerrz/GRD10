@@ -117,12 +117,12 @@
       "id": "shimna",
       "name": "Shimna",
       "range": "3",
-      "lessonsMissed": 0,
+      "lessonsMissed": 1,
       "description": "",
       "categories": {
         "humor": "HT5",
         "teachingSkills": "LT4",
-        "absentness": "LT5"
+        "absentness": "HT5"
       }
     }
   ],
@@ -153,6 +153,10 @@
         {
           "hour": "",
           "subject": "Q"
+        },
+        {
+          "hour": "",
+          "subject": "+E"
         }
       ],
       "note": "(Islam test)"
