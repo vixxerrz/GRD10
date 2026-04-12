@@ -128,11 +128,19 @@
   ],
   "timetable": {
     "tomorrow": {
-      "date": "11/4",
+      "date": "13/4",
       "subjects": [
         {
           "hour": "",
-          "subject": "Ph"
+          "subject": "M"
+        },
+        {
+          "hour": "",
+          "subject": "Isl"
+        },
+        {
+          "hour": "",
+          "subject": "Ch"
         },
         {
           "hour": "",
@@ -140,10 +148,14 @@
         },
         {
           "hour": "",
-          "subject": "CS"
+          "subject": "E"
+        },
+        {
+          "hour": "",
+          "subject": "Q"
         }
       ],
-      "note": "(All extra Classes 1hr 15 mins each (8 to 11:15)"
+      "note": "(Islam test)"
     }
   }
 }
