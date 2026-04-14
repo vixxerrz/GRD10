@@ -128,31 +128,15 @@
   ],
   "timetable": {
     "tomorrow": {
-      "date": "14/4",
+      "date": "15/4",
       "subjects": [
         {
           "hour": "",
-          "subject": "2M"
-        },
-        {
-          "hour": "",
-          "subject": "E"
-        },
-        {
-          "hour": "",
-          "subject": "CH"
-        },
-        {
-          "hour": "",
-          "subject": "2D"
-        },
-        {
-          "hour": "",
-          "subject": "CS"
-        },
-        {
-          "hour": "",
           "subject": "Isl"
+        },
+        {
+          "hour": "",
+          "subject": "B"
         },
         {
           "hour": "",
@@ -160,10 +144,18 @@
         },
         {
           "hour": "",
-          "subject": "+M"
+          "subject": "Ch"
+        },
+        {
+          "hour": "",
+          "subject": "2CS"
+        },
+        {
+          "hour": "",
+          "subject": "2E"
         }
       ],
-      "note": "(Bio test)"
+      "note": "no extra"
     }
   }
 }
