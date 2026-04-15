@@ -128,11 +128,15 @@
   ],
   "timetable": {
     "tomorrow": {
-      "date": "15/4",
+      "date": "16/4",
       "subjects": [
         {
           "hour": "",
-          "subject": "Isl"
+          "subject": "D"
+        },
+        {
+          "hour": "",
+          "subject": "Q"
         },
         {
           "hour": "",
@@ -140,22 +144,26 @@
         },
         {
           "hour": "",
-          "subject": "Ph"
+          "subject": "E"
         },
         {
           "hour": "",
-          "subject": "Ch"
+          "subject": "M"
         },
         {
           "hour": "",
-          "subject": "2CS"
+          "subject": "CS"
         },
         {
           "hour": "",
-          "subject": "2E"
+          "subject": "2Ph"
+        },
+        {
+          "hour": "",
+          "subject": "Isl"
         }
       ],
-      "note": "no extra"
+      "note": "Dhivehi extra"
     }
   }
 }
