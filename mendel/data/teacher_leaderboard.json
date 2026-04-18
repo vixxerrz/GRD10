@@ -128,18 +128,34 @@
   ],
   "timetable": {
     "tomorrow": {
-      "date": "18/4",
+      "date": "19/4",
       "subjects": [
         {
           "hour": "",
-          "subject": "Ch"
+          "subject": "2Ch"
         },
         {
           "hour": "",
-          "subject": "Cs"
+          "subject": "M"
+        },
+        {
+          "hour": "",
+          "subject": "CS"
+        },
+        {
+          "hour": "",
+          "subject": "2B"
+        },
+        {
+          "hour": "",
+          "subject": "Ph"
+        },
+        {
+          "hour": "",
+          "subject": "D"
         }
       ],
-      "note": "Extra class 9 to 11"
+      "note": "Physics extra"
     }
   }
 }
