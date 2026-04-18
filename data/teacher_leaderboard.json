@@ -69,11 +69,11 @@
       "id": "amjadh",
       "name": "Amjadh",
       "range": "3",
-      "lessonsMissed": 3,
+      "lessonsMissed": 5,
       "categories": {
         "humor": "LT3",
-        "teachingSkills": "LT5",
-        "absentness": "HT4"
+        "teachingSkills": "LT4",
+        "absentness": "LT3"
       },
       "description": ""
     },
@@ -189,12 +189,12 @@
       "id": "shimna",
       "name": "Shimna",
       "range": "3",
-      "lessonsMissed": 0,
+      "lessonsMissed": 2,
       "description": "",
       "categories": {
         "humor": "HT5",
         "teachingSkills": "HT5",
-        "absentness": "LT5"
+        "absentness": "LT4"
       }
     }
   ]

@@ -57,7 +57,7 @@
       "id": "amjadh",
       "name": "Amjadh",
       "range": "3",
-      "lessonsMissed": 3,
+      "lessonsMissed": 2,
       "categories": {
         "humor": "LT3",
         "teachingSkills": "LT4",
@@ -128,42 +128,18 @@
   ],
   "timetable": {
     "tomorrow": {
-      "date": "16/4",
+      "date": "18/4",
       "subjects": [
         {
           "hour": "",
-          "subject": "D"
+          "subject": "Ch"
         },
         {
           "hour": "",
-          "subject": "Q"
-        },
-        {
-          "hour": "",
-          "subject": "B"
-        },
-        {
-          "hour": "",
-          "subject": "E"
-        },
-        {
-          "hour": "",
-          "subject": "M"
-        },
-        {
-          "hour": "",
-          "subject": "CS"
-        },
-        {
-          "hour": "",
-          "subject": "2Ph"
-        },
-        {
-          "hour": "",
-          "subject": "Isl"
+          "subject": "Cs"
         }
       ],
-      "note": "Dhivehi extra"
+      "note": "Extra class 9 to 11"
     }
   }
 }
