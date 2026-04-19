@@ -21,7 +21,7 @@
       "id": "hamzath",
       "name": "Hamzath",
       "range": "1",
-      "lessonsMissed": 4,
+      "lessonsMissed": 5,
       "categories": {
         "humor": "LT4",
         "teachingSkills": "HT5",
@@ -128,34 +128,34 @@
   ],
   "timetable": {
     "tomorrow": {
-      "date": "19/4",
+      "date": "20/4",
       "subjects": [
-        {
-          "hour": "",
-          "subject": "2Ch"
-        },
         {
           "hour": "",
           "subject": "M"
         },
         {
           "hour": "",
-          "subject": "CS"
+          "subject": "Isl"
         },
         {
           "hour": "",
-          "subject": "2B"
+          "subject": "Ch"
         },
         {
           "hour": "",
-          "subject": "Ph"
+          "subject": "B"
         },
         {
           "hour": "",
-          "subject": "D"
+          "subject": "E"
+        },
+        {
+          "hour": "",
+          "subject": "Q"
         }
       ],
-      "note": "Physics extra"
+      "note": "Bio extra"
     }
   }
 }
