@@ -21,7 +21,7 @@
       "id": "hamzath",
       "name": "Hamzath",
       "range": "1",
-      "lessonsMissed": 5,
+      "lessonsMissed": 6,
       "categories": {
         "humor": "LT4",
         "teachingSkills": "HT5",
@@ -117,30 +117,26 @@
       "id": "shimna",
       "name": "Shimna",
       "range": "3",
-      "lessonsMissed": 1,
+      "lessonsMissed": 2,
       "description": "",
       "categories": {
         "humor": "HT5",
         "teachingSkills": "LT4",
-        "absentness": "HT5"
+        "absentness": "LT4"
       }
     }
   ],
   "timetable": {
     "tomorrow": {
-      "date": "22/4",
+      "date": "27/4",
       "subjects": [
         {
           "hour": "",
+          "subject": "M"
+        },
+        {
+          "hour": "",
           "subject": "Isl"
-        },
-        {
-          "hour": "",
-          "subject": "B"
-        },
-        {
-          "hour": "",
-          "subject": "Ph"
         },
         {
           "hour": "",
@@ -148,14 +144,18 @@
         },
         {
           "hour": "",
-          "subject": "2CS"
+          "subject": "B"
         },
         {
           "hour": "",
-          "subject": "2E"
+          "subject": "E"
+        },
+        {
+          "hour": "",
+          "subject": "Q"
         }
       ],
-      "note": "No extra"
+      "note": "English extra"
     }
   }
 }

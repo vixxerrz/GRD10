@@ -21,11 +21,11 @@
       "id": "hamzath",
       "name": "Hamzath",
       "range": "1",
-      "lessonsMissed": 8,
+      "lessonsMissed": 10,
       "categories": {
         "humor": "LT4",
         "teachingSkills": "HT5",
-        "absentness": "LT3"
+        "absentness": "HT3"
       },
       "description": ""
     },
@@ -69,7 +69,7 @@
       "id": "amjadh",
       "name": "Amjadh",
       "range": "3",
-      "lessonsMissed": 5,
+      "lessonsMissed": 6,
       "categories": {
         "humor": "LT3",
         "teachingSkills": "LT4",
@@ -105,11 +105,11 @@
       "id": "sareena",
       "name": "Sareena",
       "range": "1",
-      "lessonsMissed": 0,
+      "lessonsMissed": 1,
       "categories": {
         "humor": "HT5",
         "teachingSkills": "HT4",
-        "absentness": "LT5"
+        "absentness": "HT5"
       },
       "description": ""
     },
@@ -189,12 +189,12 @@
       "id": "shimna",
       "name": "Shimna",
       "range": "3",
-      "lessonsMissed": 2,
+      "lessonsMissed": 4,
       "description": "",
       "categories": {
         "humor": "HT5",
         "teachingSkills": "HT5",
-        "absentness": "LT4"
+        "absentness": "HT4"
       }
     }
   ]
