@@ -21,7 +21,7 @@
       "id": "hamzath",
       "name": "Hamzath",
       "range": "1",
-      "lessonsMissed": 6,
+      "lessonsMissed": 7,
       "categories": {
         "humor": "LT4",
         "teachingSkills": "HT5",
@@ -105,11 +105,11 @@
       "id": "sijo",
       "name": "Sijo",
       "range": "3",
-      "lessonsMissed": 4,
+      "lessonsMissed": 5,
       "categories": {
         "humor": "HT3",
         "teachingSkills": "HT3",
-        "absentness": "HT4"
+        "absentness": "LT3"
       },
       "description": ""
     },
